@@ -1,0 +1,2222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Let's Talk Agriculture | Strategic Communication & Intelligence</title>
+    
+    <meta name="description" content="Strategic communication and industry intelligence for African agriculture. AI-powered insights, media production, and advisory for agribusinesses across Africa." />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Let's Talk Agriculture" />
+    <meta property="og:url" content="https://lets-talk-agriculture.kite.space/" />
+    <meta property="og:title" content="Let's Talk Agriculture | Strategic Communication & Intelligence" />
+    <meta property="og:description" content="Strategic communication and industry intelligence for African agriculture. AI-powered insights, media production, and advisory for agribusinesses across Africa." />
+    <meta property="og:image" content="https://static.kite.ai/image/upload/v1777710045/app/4706213a-74de-4cf0-a57f-1ffa6427055a/ofnye1amhipkhrdve8er.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://lets-talk-agriculture.kite.space/" />
+    <meta name="twitter:title" content="Let's Talk Agriculture | Strategic Communication & Intelligence" />
+    <meta name="twitter:description" content="Strategic communication and industry intelligence for African agriculture. AI-powered insights, media production, and advisory for agribusinesses across Africa." />
+    <meta name="twitter:image" content="https://static.kite.ai/image/upload/v1777710045/app/4706213a-74de-4cf0-a57f-1ffa6427055a/ofnye1amhipkhrdve8er.png" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://lets-talk-agriculture.kite.space/" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Let's Talk Agriculture",
+      "description": "Strategic communication and industry intelligence for African agriculture. AI-powered insights, media production, and advisory for agribusinesses across Africa.",
+      "url": "https://lets-talk-agriculture.kite.space/",
+      "logo": "https://static.kite.ai/image/upload/v1777710045/app/4706213a-74de-4cf0-a57f-1ffa6427055a/ofnye1amhipkhrdve8er.png",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Lagos",
+        "addressCountry": "NG"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "hello@letstalkagriculture.com",
+        "contactType": "customer service"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/lets-talkagriculture/",
+        "https://www.instagram.com/letstalkagriculture_llc?igsh=MTY2bXkxaHJvMW5mZA%3D%3D&utm_source=qr"
+      ]
+    }
+    </script>
+
+    <!-- Fonts: Libre Baskerville (Serif/Titles) & Inter (Sans/Body substitute for Open Sans to maintain tech feel) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                teal: '#1B4D4D',
+                yellow: '#FFCC00',
+                bg: '#FAFAFA',
+                surface: '#FFFFFF',
+                text: '#111827',
+                muted: '#4B5563',
+                border: '#E5E7EB'
+              }
+            },
+            fontFamily: {
+              serif: ['"Libre Baskerville"', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            boxShadow: {
+              'glass': '0 4px 24px rgba(0, 0, 0, 0.03)',
+              'glass-hover': '0 12px 32px rgba(27, 77, 77, 0.08)',
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      body {
+        background-color: #FAFAFA;
+        color: #111827;
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      /* Typography Scale */
+      .display-xl {
+        font-family: 'Libre Baskerville', serif;
+        font-size: clamp(3rem, 6vw, 5.5rem);
+        line-height: 1.05;
+        letter-spacing: -0.03em;
+        color: #1B4D4D;
+      }
+      
+      .display-lg {
+        font-family: 'Libre Baskerville', serif;
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        color: #1B4D4D;
+      }
+
+      /* Navbar Scroll Effect */
+      #navbar {
+        transition: background-color 0.3s ease, border-color 0.3s ease, backdrop-filter 0.3s ease;
+      }
+      #navbar.scrolled {
+        background-color: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(8px);
+        border-bottom-color: #E5E7EB;
+      }
+
+      /* Glass Card (Light Mode Adapt) */
+      .glass-card {
+        background: #FFFFFF;
+        border: 1px solid #E5E7EB;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.03);
+        border-radius: 16px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .glass-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 32px rgba(27, 77, 77, 0.08);
+      }
+
+      /* Scroll Reveal */
+      .reveal {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+      }
+      .reveal.active {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Staggered Grid Reveal */
+      .stagger-1 { transition-delay: 100ms; }
+      .stagger-2 { transition-delay: 200ms; }
+      .stagger-3 { transition-delay: 300ms; }
+
+      /* Sticky Anchor Layout */
+      .anchor-stage-container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+      @media (min-width: 768px) {
+        .anchor-stage-container {
+          flex-direction: row;
+          gap: 5rem;
+        }
+        .anchor-col {
+          width: 35%;
+          flex-shrink: 0;
+        }
+        .stage-col {
+          width: 65%;
+        }
+        .sticky-anchor {
+          position: sticky;
+          top: 120px;
+        }
+      }
+
+      /* Custom Scrollbar for a tech feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FAFAFA;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #D1D5DB;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #9CA3AF;
+      }
+
+      /* Product UI Mockup Animations */
+      @keyframes pulse-slow {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.7; }
+      }
+      .animate-pulse-slow {
+        animation: pulse-slow 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-brand-bg/80 backdrop-blur-md border-b border-transparent transition-all duration-300" id="navbar">
+      <div class="max-w-[1200px] mx-auto px-6 h-20 flex items-center justify-between">
+        <a href="/" onclick="handleNav(event, '/')" class="flex items-center group">
+          <img src="https://static.kite.ai/image/upload/v1777710045/app/4706213a-74de-4cf0-a57f-1ffa6427055a/ofnye1amhipkhrdve8er.png" alt="Let's Talk Agriculture Logo" class="h-10 w-auto object-contain" />
+        </a>
+
+        <div class="hidden md:flex items-center gap-8">
+          <a href="/about" onclick="handleNav(event, '/about')" class="text-sm font-medium text-brand-muted hover:text-brand-teal transition-colors" data-nav>About</a>
+          <a href="/services" onclick="handleNav(event, '/services')" class="text-sm font-medium text-brand-muted hover:text-brand-teal transition-colors" data-nav>Services</a>
+          <a href="/product" onclick="handleNav(event, '/product')" class="text-sm font-medium text-brand-teal hover:text-brand-yellow transition-colors flex items-center gap-1" data-nav>
+            Sentra <i data-lucide="sparkles" class="w-3 h-3"></i>
+          </a>
+          <a href="/media" onclick="handleNav(event, '/media')" class="text-sm font-medium text-brand-muted hover:text-brand-teal transition-colors" data-nav>Media</a>
+          <a href="/editorial" onclick="handleNav(event, '/editorial')" class="text-sm font-medium text-brand-muted hover:text-brand-teal transition-colors" data-nav>Editorial</a>
+          <a href="/case-studies" onclick="handleNav(event, '/case-studies')" class="text-sm font-medium text-brand-muted hover:text-brand-teal transition-colors" data-nav>Work</a>
+        </div>
+
+        <div class="hidden md:flex items-center gap-4">
+          <a href="/contact" onclick="handleNav(event, '/contact')" class="text-sm font-medium text-brand-teal hover:text-brand-yellow transition-colors" data-nav>Contact</a>
+          <a href="/contact" onclick="handleNav(event, '/contact')" class="bg-brand-teal text-white px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-teal/90 transition-colors shadow-sm">
+            Explore work
+          </a>
+        </div>
+
+        <button id="mobile-menu-btn" class="md:hidden p-2 text-brand-teal focus:outline-none">
+          <i data-lucide="menu" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- MOBILE MENU -->
+    <div id="mobile-menu" class="fixed inset-0 z-[60] bg-brand-surface transform translate-x-full transition-transform duration-300 flex flex-col">
+      <div class="h-20 flex items-center justify-between px-6 border-b border-brand-border">
+        <img src="https://static.kite.ai/image/upload/v1777710045/app/4706213a-74de-4cf0-a57f-1ffa6427055a/ofnye1amhipkhrdve8er.png" alt="Let's Talk Agriculture Logo" class="h-8 w-auto" />
+        <button id="close-mobile-menu" class="p-2 text-brand-teal">
+          <i data-lucide="x" class="w-6 h-6"></i>
+        </button>
+      </div>
+      <div class="flex-1 flex flex-col justify-center items-center gap-6 p-6">
+        <a href="/" onclick="handleNav(event, '/')" class="text-2xl font-serif text-brand-teal">Home</a>
+        <a href="/about" onclick="handleNav(event, '/about')" class="text-2xl font-serif text-brand-teal">About</a>
+        <a href="/services" onclick="handleNav(event, '/services')" class="text-2xl font-serif text-brand-teal">Services</a>
+        <a href="/product" onclick="handleNav(event, '/product')" class="text-2xl font-serif text-brand-teal flex items-center gap-2">Sentra <i data-lucide="sparkles" class="w-5 h-5 text-brand-yellow"></i></a>
+        <a href="/media" onclick="handleNav(event, '/media')" class="text-2xl font-serif text-brand-teal">Media</a>
+        <a href="/editorial" onclick="handleNav(event, '/editorial')" class="text-2xl font-serif text-brand-teal">Editorial</a>
+        <a href="/case-studies" onclick="handleNav(event, '/case-studies')" class="text-2xl font-serif text-brand-teal">Work</a>
+        <a href="/contact" onclick="handleNav(event, '/contact')" class="text-2xl font-serif text-brand-teal">Contact</a>
+        <a href="/contact" onclick="handleNav(event, '/contact')" class="mt-4 bg-brand-teal text-white px-8 py-3 rounded-full text-lg font-medium w-full text-center">Explore work</a>
+      </div>
+    </div>
+
+    <main id="app" class="pt-20">
+      <!-- Route content is appended dynamically -->
+    </main>
+
+    <!-- GLOBAL FOOTER -->
+    <footer class="bg-brand-surface border-t border-brand-border pt-20 pb-10">
+      <div class="max-w-[1200px] mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+          <div class="md:col-span-2">
+            <img src="https://static.kite.ai/image/upload/v1777710045/app/4706213a-74de-4cf0-a57f-1ffa6427055a/ofnye1amhipkhrdve8er.png" alt="Let's Talk Agriculture Logo" class="h-12 w-auto mb-6" />
+            <p class="text-brand-muted max-w-sm mb-6">Strategic communication and industry intelligence for African agriculture.</p>
+            <div class="flex gap-4">
+              <a href="https://www.linkedin.com/company/lets-talkagriculture/" target="_blank" class="w-10 h-10 rounded-full bg-brand-bg flex items-center justify-center text-brand-teal hover:bg-brand-teal hover:text-white transition-colors border border-brand-border">
+                <i data-lucide="linkedin" class="w-4 h-4"></i>
+              </a>
+              <a href="https://www.instagram.com/letstalkagriculture_llc?igsh=MTY2bXkxaHJvMW5mZA%3D%3D&utm_source=qr" target="_blank" class="w-10 h-10 rounded-full bg-brand-bg flex items-center justify-center text-brand-teal hover:bg-brand-teal hover:text-white transition-colors border border-brand-border">
+                <i data-lucide="instagram" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <h4 class="font-serif text-brand-teal text-lg mb-4">Ecosystem</h4>
+            <ul class="space-y-3">
+              <li><a href="/services" onclick="handleNav(event, '/services')" class="text-brand-muted hover:text-brand-teal transition-colors">Advisory</a></li>
+              <li><a href="/product" onclick="handleNav(event, '/product')" class="text-brand-muted hover:text-brand-teal transition-colors flex items-center gap-2">Sentra Insights <span class="text-[10px] uppercase tracking-wider bg-brand-yellow/20 text-brand-teal px-2 py-0.5 rounded-full font-medium">Flagship</span></a></li>
+              <li><a href="/media" onclick="handleNav(event, '/media')" class="text-brand-muted hover:text-brand-teal transition-colors">The Forum</a></li>
+              <li><a href="/editorial" onclick="handleNav(event, '/editorial')" class="text-brand-muted hover:text-brand-teal transition-colors">Roots & Reach</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-serif text-brand-teal text-lg mb-4">Company</h4>
+            <ul class="space-y-3">
+              <li><a href="/about" onclick="handleNav(event, '/about')" class="text-brand-muted hover:text-brand-teal transition-colors">About Us</a></li>
+              <li><a href="/case-studies" onclick="handleNav(event, '/case-studies')" class="text-brand-muted hover:text-brand-teal transition-colors">Work</a></li>
+              <li><a href="/contact" onclick="handleNav(event, '/contact')" class="text-brand-muted hover:text-brand-teal transition-colors">Contact</a></li>
+              <li class="flex items-start gap-2 text-brand-muted mt-6">
+                <i data-lucide="map-pin" class="w-4 h-4 mt-1 flex-shrink-0"></i>
+                <span>Lagos, Nigeria</span>
+              </li>
+              <li class="flex items-center gap-2 text-brand-muted">
+                <i data-lucide="mail" class="w-4 h-4 flex-shrink-0"></i>
+                <a href="mailto:hello@letstalkagriculture.com" class="hover:text-brand-teal transition-colors">hello@letstalkagriculture.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-brand-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p class="text-sm text-brand-muted">© <span id="year"></span> Let's Talk Agriculture. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- DATA & ROUTING -->
+    <script id="content" type="application/json">{
+    "company": "content/company.json"
+}</script>
+
+    <script type="module">
+import { submitContactForm } from '@appsmithorg/template-frontend/utility';
+document.dispatchEvent(new CustomEvent('kite:core-ready', {
+  detail: { submitContactForm }
+}));
+</script>
+
+<script id="main_script">
+// Receive async-loaded core utilities via CustomEvent (non-blocking)
+let submitContactForm = null;
+document.addEventListener('kite:core-ready', (e) => {
+  submitContactForm = e.detail.submitContactForm;
+});
+const data = JSON.parse(document.getElementById('content').textContent);
+      const app = document.getElementById('app');
+      document.getElementById('year').textContent = new Date().getFullYear();
+
+      // ─── ROUTER ───────────────────────────────────────────────────
+      const routes = {
+        '/': { title: 'Home | Let\'s Talk Agriculture', description: 'Strategic communication and industry intelligence for African agriculture.', render: renderHome },
+        '/about': { title: 'About | Let\'s Talk Agriculture', description: 'Learn about our mission in African agriculture.', render: renderAbout },
+        '/services': { title: 'Services | Let\'s Talk Agriculture', description: 'Advisory and strategic communication services.', render: renderServices },
+        '/product': { title: 'Sentra Insights | Let\'s Talk Agriculture', description: 'Customer intelligence for agriculture organizations.', render: renderProduct },
+        '/media': { title: 'Media | Let\'s Talk Agriculture', description: 'Industry conversations and sector dialogues.', render: renderMedia },
+        '/editorial': { title: 'Editorial | Let\'s Talk Agriculture', description: 'Storytelling shaping agriculture across Africa.', render: renderEditorial },
+        '/contact': { title: 'Contact | Let\'s Talk Agriculture', description: 'Get in touch with us in Lagos, Nigeria.', render: renderContact },
+        '/case-studies': { title: 'Case Studies | Let\'s Talk Agriculture', description: 'Selected strategic communications engagements across agriculture, sustainability, and market systems in Africa.', render: renderCaseStudies },
+        '/sentra-dashboard': { title: 'Dashboard Preview | Sentra Insights', description: 'A preview of the Sentra Insights customer intelligence dashboard for agriculture organizations.', render: renderSentraDashboard }
+      };
+
+      function upsertHeadMeta(selector, attributes, content) {
+        if (!content) return;
+        let metaTag = document.head.querySelector(selector);
+        if (!metaTag) {
+          metaTag = document.createElement('meta');
+          Object.entries(attributes).forEach(([key, value]) => metaTag.setAttribute(key, value));
+          document.head.appendChild(metaTag);
+        }
+        metaTag.setAttribute('content', content);
+      }
+
+      function applyRouteMetadataToHead(route) {
+        document.title = route.title;
+        upsertHeadMeta('meta[name="description"]', { name: 'description' }, route.description);
+        upsertHeadMeta('meta[property="og:title"]', { property: 'og:title' }, route.title);
+        upsertHeadMeta('meta[property="og:description"]', { property: 'og:description' }, route.description);
+      }
+
+      function handleNav(e, path) {
+        if(e) e.preventDefault();
+        if (path === location.pathname) return;
+        history.pushState({}, '', path);
+        render(path);
+        closeMobileMenuBtn.click();
+      }
+
+      function render(path) {
+        const route = routes[path] || routes['/'];
+        applyRouteMetadataToHead(route);
+
+        document.querySelectorAll('[data-nav]').forEach(link => {
+          const isActive = link.getAttribute('href') === path;
+          if(isActive) {
+            link.classList.add('text-brand-teal');
+            link.classList.remove('text-brand-muted');
+          } else {
+            if(!link.classList.contains('bg-brand-teal')) { // Don't dim the CTA button
+               link.classList.remove('text-brand-teal');
+               link.classList.add('text-brand-muted');
+            }
+          }
+        });
+
+        scrollTo({ top: 0, behavior: 'instant' });
+        route.render();
+        
+        // Re-initialize icons and observers after render
+        setTimeout(() => {
+          if(window.lucide) lucide.createIcons();
+          initScrollReveal();
+        }, 50);
+      }
+
+      window.addEventListener('popstate', () => render(location.pathname));
+      window.handleNav = handleNav;
+
+      // ─── UI INTERACTIONS ──────────────────────────────────────────
+      const nav = document.getElementById('navbar');
+      window.addEventListener('scroll', () => {
+        nav.classList.toggle('scrolled', window.scrollY > 20);
+      });
+
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const closeMobileMenuBtn = document.getElementById('close-mobile-menu');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.remove('translate-x-full'));
+      closeMobileMenuBtn.addEventListener('click', () => mobileMenu.classList.add('translate-x-full'));
+
+      function initScrollReveal() {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('active');
+              observer.unobserve(entry.target); // Run once
+            }
+          });
+        }, { threshold: 0.1, rootMargin: "0px 0px -50px 0px" });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+      }
+
+      // ─── PAGE RENDERERS ───────────────────────────────────────
+      
+      // Reusable Sentra UI Component
+      const sentraMockupHTML = `
+        <div class="glass-card overflow-hidden flex flex-col h-[400px] w-full max-w-2xl mx-auto shadow-2xl shadow-brand-teal/5 border-brand-border relative">
+          <!-- App Header -->
+          <div class="h-12 border-b border-brand-border flex items-center px-4 gap-2 bg-brand-bg/50">
+            <div class="w-3 h-3 rounded-full bg-gray-200"></div>
+            <div class="w-3 h-3 rounded-full bg-gray-200"></div>
+            <div class="w-3 h-3 rounded-full bg-gray-200"></div>
+            <div class="ml-4 text-xs font-medium text-brand-muted bg-white px-3 py-1 rounded-md shadow-sm border border-brand-border flex items-center gap-2">
+              <i data-lucide="lock" class="w-3 h-3"></i> sentra.letstalkagriculture.com
+            </div>
+          </div>
+          <!-- App Body -->
+          <div class="flex-1 flex bg-brand-bg/20">
+            <!-- Sidebar -->
+            <div class="w-16 md:w-48 border-r border-brand-border bg-white flex flex-col py-4 px-2 md:px-4 gap-2">
+              <div class="h-8 w-full bg-brand-teal/5 rounded flex items-center px-2 mb-4">
+                <div class="w-4 h-4 rounded bg-brand-teal/20"></div>
+                <div class="hidden md:block h-2 w-16 bg-brand-teal/40 rounded ml-2"></div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="h-6 w-full rounded flex items-center px-2">
+                  <div class="w-4 h-4 rounded-full bg-gray-200"></div>
+                  <div class="hidden md:block h-2 w-20 bg-gray-200 rounded ml-2"></div>
+                </div>
+                <div class="h-6 w-full rounded flex items-center px-2">
+                  <div class="w-4 h-4 rounded-full bg-gray-200"></div>
+                  <div class="hidden md:block h-2 w-16 bg-gray-200 rounded ml-2"></div>
+                </div>
+              </div>
+            </div>
+            <!-- Main Dashboard Area -->
+            <div class="flex-1 p-4 md:p-6 flex flex-col gap-4 overflow-hidden relative">
+              <!-- Decorative background glow inside mockup -->
+              <div class="absolute top-0 right-0 w-64 h-64 bg-brand-yellow/5 rounded-full blur-3xl -z-10"></div>
+              
+              <div class="flex justify-between items-end">
+                <div>
+                  <div class="h-3 w-24 bg-brand-muted/30 rounded mb-2"></div>
+                  <div class="h-6 w-40 bg-brand-teal rounded"></div>
+                </div>
+                <div class="h-8 w-24 bg-white border border-brand-border rounded-full shadow-sm"></div>
+              </div>
+
+              <!-- Main Chart Area -->
+              <div class="h-40 bg-white rounded-xl border border-brand-border shadow-sm flex items-end px-4 pt-4 pb-0 relative overflow-hidden">
+                <div class="absolute top-4 left-4 h-3 w-32 bg-gray-100 rounded"></div>
+                <div class="w-full flex items-end justify-between gap-1 h-[80%] pb-2">
+                  <div class="w-full bg-brand-teal/10 rounded-t h-[30%] animate-pulse-slow object-cover" style="animation-delay: 0ms;"></div>
+                  <div class="w-full bg-brand-teal/20 rounded-t h-[50%] animate-pulse-slow" style="animation-delay: 100ms;"></div>
+                  <div class="w-full bg-brand-teal/30 rounded-t h-[40%] animate-pulse-slow" style="animation-delay: 200ms;"></div>
+                  <div class="w-full bg-brand-teal/40 rounded-t h-[70%] animate-pulse-slow" style="animation-delay: 300ms;"></div>
+                  <div class="w-full bg-brand-yellow rounded-t h-[90%] relative">
+                    <div class="absolute -top-8 left-1/2 -translate-x-1/2 bg-brand-teal text-white text-[10px] px-2 py-1 rounded shadow-lg whitespace-nowrap">Peak Signal</div>
+                  </div>
+                  <div class="w-full bg-brand-teal/30 rounded-t h-[60%] animate-pulse-slow" style="animation-delay: 400ms;"></div>
+                  <div class="w-full bg-brand-teal/20 rounded-t h-[40%] animate-pulse-slow" style="animation-delay: 500ms;"></div>
+                </div>
+              </div>
+
+              <!-- Data Cards -->
+              <div class="grid grid-cols-2 gap-4 flex-1">
+                <div class="bg-white rounded-xl border border-brand-border shadow-sm p-4 flex flex-col justify-between">
+                  <div class="h-3 w-16 bg-gray-100 rounded"></div>
+                  <div class="flex items-end gap-2">
+                    <div class="h-8 w-12 bg-brand-teal rounded"></div>
+                    <div class="h-4 w-8 bg-green-100 rounded"></div>
+                  </div>
+                </div>
+                <div class="bg-white rounded-xl border border-brand-border shadow-sm p-4 flex flex-col justify-between">
+                  <div class="h-3 w-20 bg-gray-100 rounded"></div>
+                  <div class="flex flex-col gap-2 w-full mt-2">
+                    <div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden"><div class="h-full w-[70%] bg-brand-yellow"></div></div>
+                    <div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden"><div class="h-full w-[40%] bg-brand-teal/40"></div></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+      function renderHome() {
+        app.innerHTML = `
+          <!-- HERO -->
+          <section class="relative pt-24 pb-20 md:pt-40 md:pb-32 px-6 overflow-hidden">
+            <!-- Subtle background tech grid -->
+            <div class="absolute inset-0 z-0 opacity-[0.03]" style="background-image: linear-gradient(#1B4D4D 1px, transparent 1px), linear-gradient(90deg, #1B4D4D 1px, transparent 1px); background-size: 40px 40px;"></div>
+            <div class="absolute top-0 right-0 w-[50vw] h-[50vw] bg-brand-yellow/5 rounded-full blur-[100px] -z-10 translate-x-1/3 -translate-y-1/3"></div>
+
+            <div class="max-w-[1200px] mx-auto relative z-10">
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-brand-border shadow-sm mb-8 reveal">
+                <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse"></span>
+                <span class="text-xs font-medium text-brand-teal uppercase tracking-wider">Strategic Communication · Intelligence · Sentra</span>
+              </div>
+              
+              <h1 class="font-serif text-[2.5rem] md:text-[3.5rem] leading-[1.1] tracking-[-0.02em] text-brand-teal mb-8 max-w-[760px] reveal stagger-1">
+                Where African agriculture meets intelligence-driven communication.
+              </h1>
+              
+              <p class="text-lg md:text-xl text-brand-muted max-w-[700px] mb-12 leading-relaxed reveal stagger-2">
+                Let's Talk Agriculture combines strategic advisory, editorial storytelling, and AI-powered customer intelligence (powered by Sentra) to help organizations build credibility, deepen market understanding, and lead conversations shaping African food systems.
+              </p>
+              
+              <div class="flex flex-wrap items-center gap-4 reveal stagger-3">
+                <a href="/contact" onclick="handleNav(event, '/contact')" class="bg-brand-teal text-white px-8 py-4 rounded-full font-medium hover:bg-brand-teal/90 transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                  Start a conversation <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+                <a href="/product" onclick="handleNav(event, '/product')" class="inline-flex items-center gap-2 px-8 py-4 rounded-full border border-brand-border bg-white text-brand-teal font-medium hover:border-brand-teal hover:shadow-sm transition-all">
+                  See Sentra Insights <i data-lucide="cpu" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- CORE ECOSYSTEM (Anchor & Stage Pattern) -->
+          <section class="py-24 bg-white border-y border-brand-border relative">
+            <div class="max-w-[1200px] mx-auto px-6 anchor-stage-container">
+              
+              <!-- Anchor -->
+              <div class="anchor-col">
+                <div class="sticky-anchor reveal">
+                  <h2 class="font-sans text-sm font-semibold tracking-widest text-brand-muted uppercase mb-4">Core Ecosystem</h2>
+                  <h3 class="display-lg mb-6">Our Work</h3>
+                  <p class="text-brand-muted mb-8 max-w-sm">
+                    A comprehensive suite of services designed to elevate agricultural organizations through clarity and intelligence.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Stage (Bento Stack) -->
+              <div class="stage-col flex flex-col gap-6">
+                
+                <!-- Card 1 -->
+                <div class="glass-card p-8 md:p-10 reveal">
+                  <div class="w-12 h-12 rounded-xl bg-brand-bg flex items-center justify-center border border-brand-border mb-6 text-brand-teal">
+                    <i data-lucide="compass" class="w-6 h-6"></i>
+                  </div>
+                  <h4 class="font-serif text-2xl text-brand-teal mb-3">Advisory</h4>
+                  <p class="text-brand-muted mb-8 leading-relaxed max-w-xl">
+                    Strategic communication, narrative, positioning, and visibility support for agriculture organizations.
+                  </p>
+                  <a href="/services" onclick="handleNav(event, '/services')" class="inline-flex items-center gap-2 text-sm font-medium text-brand-teal hover:text-brand-yellow transition-colors group">
+                    Explore Advisory <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                  </a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-card p-8 md:p-10 reveal">
+                  <div class="w-12 h-12 rounded-xl bg-brand-bg flex items-center justify-center border border-brand-border mb-6 text-brand-teal">
+                    <i data-lucide="mic" class="w-6 h-6"></i>
+                  </div>
+                  <h4 class="font-serif text-2xl text-brand-teal mb-3">Forum</h4>
+                  <p class="text-brand-muted mb-8 leading-relaxed max-w-xl">
+                    Industry conversations, sector dialogues, and podcast discussions shaping conversations around African agricultural markets.
+                  </p>
+                  <a href="/media" onclick="handleNav(event, '/media')" class="inline-flex items-center gap-2 text-sm font-medium text-brand-teal hover:text-brand-yellow transition-colors group">
+                    Explore The Forum <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                  </a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-card p-8 md:p-10 reveal">
+                  <div class="w-12 h-12 rounded-xl bg-brand-bg flex items-center justify-center border border-brand-border mb-6 text-brand-teal">
+                    <i data-lucide="book-open" class="w-6 h-6"></i>
+                  </div>
+                  <h4 class="font-serif text-2xl text-brand-teal mb-3">Roots & Reach</h4>
+                  <p class="text-brand-muted mb-8 leading-relaxed max-w-xl">
+                    Editorial storytelling and documentation exploring the people, systems, and organizations shaping agriculture across Africa.
+                  </p>
+                  <a href="/editorial" onclick="handleNav(event, '/editorial')" class="inline-flex items-center gap-2 text-sm font-medium text-brand-teal hover:text-brand-yellow transition-colors group">
+                    Explore Editorial <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                  </a>
+                </div>
+
+                <!-- Card 4 (Sentra - Highlighted) -->
+                <div class="glass-card p-8 md:p-10 bg-brand-teal text-white border-none reveal relative overflow-hidden group">
+                  <div class="absolute top-0 right-0 w-64 h-64 bg-brand-yellow/20 rounded-full blur-3xl -z-0 transform group-hover:scale-110 transition-transform duration-700"></div>
+                  <div class="relative z-10">
+                    <div class="flex items-center gap-3 mb-6">
+                      <div class="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center border border-white/20 text-brand-yellow backdrop-blur-sm flex-shrink-0">
+                        <i data-lucide="cpu" class="w-6 h-6"></i>
+                      </div>
+                      <span class="text-[10px] uppercase tracking-wider bg-brand-yellow text-brand-teal px-2 py-0.5 rounded-full font-sans font-bold self-center">Flagship Product</span>
+                    </div>
+                    <h4 class="font-serif text-2xl mb-3">Sentra Insights</h4>
+                    <p class="text-white/80 mb-8 leading-relaxed max-w-sm text-sm">
+                      AI-powered customer intelligence for agriculture. Turn field conversations and customer feedback into structured insight your team can act on.
+                    </p>
+                    <a href="/product" onclick="handleNav(event, '/product')" class="inline-flex items-center gap-2 text-sm font-medium text-brand-yellow hover:text-white transition-colors group/link">
+                      Explore Sentra <i data-lucide="arrow-right" class="w-4 h-4 transform group-[.group\/link]:translate-x-1 transition-transform"></i>
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- POSITIONING SECTION -->
+          <section class="py-32 px-6 relative overflow-hidden">
+            <div class="max-w-[800px] mx-auto text-center reveal">
+              <h2 class="display-lg mb-8">Communication in agriculture is more than visibility.</h2>
+              <p class="text-xl md:text-2xl font-serif text-brand-teal italic mb-12">
+                The strongest organizations are not only seen. They are clearly understood.
+              </p>
+              
+              <div class="glass-card p-8 md:p-12 text-left bg-white relative">
+                <div class="absolute top-0 left-0 w-1 h-full bg-brand-yellow rounded-l-xl"></div>
+                <p class="text-lg text-brand-text mb-6">Our work sits at the intersection of:</p>
+                <ul class="space-y-4 mb-8">
+                  <li class="flex items-center gap-4 text-brand-muted">
+                    <div class="w-8 h-8 rounded-full bg-brand-bg flex items-center justify-center border border-brand-border text-brand-teal shrink-0">1</div>
+                    <span class="font-medium text-brand-text">strategic communication</span>
+                  </li>
+                  <li class="flex items-center gap-4 text-brand-muted">
+                    <div class="w-8 h-8 rounded-full bg-brand-bg flex items-center justify-center border border-brand-border text-brand-teal shrink-0">2</div>
+                    <span class="font-medium text-brand-text">industry conversations</span>
+                  </li>
+                  <li class="flex items-center gap-4 text-brand-muted">
+                    <div class="w-8 h-8 rounded-full bg-brand-bg flex items-center justify-center border border-brand-border text-brand-teal shrink-0">3</div>
+                    <span class="font-medium text-brand-text">editorial storytelling</span>
+                  </li>
+                  <li class="flex items-center gap-4 text-brand-muted">
+                    <div class="w-8 h-8 rounded-full bg-brand-bg flex items-center justify-center border border-brand-border text-brand-teal shrink-0">4</div>
+                    <span class="font-medium text-brand-text">and agricultural intelligence</span>
+                  </li>
+                </ul>
+                <p class="text-lg text-brand-teal font-medium">
+                  to help organizations strengthen trust, visibility, and engagement across the agricultural ecosystem.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- FOUNDER CREDIBILITY -->
+          <section class="py-24 px-6 bg-white border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto reveal">
+              <div class="flex flex-col md:flex-row gap-12 md:gap-16 items-end">
+                <!-- Portrait column -->
+                <div class="md:w-[340px] flex-shrink-0">
+                  <div class="rounded-2xl overflow-hidden bg-brand-bg" style="aspect-ratio: 3/4;">
+                    <img src="https://static.kite.ai/image/upload/v1777714507/app/4706213a-74de-4cf0-a57f-1ffa6427055a/e7lnse4zjcl6mndnub4k.png" alt="Sharon Nkwah, Founder of Let's Talk Agriculture" class="w-full h-full object-cover object-center">
+                  </div>
+                </div>
+                <!-- Text column -->
+                <div class="flex-1 pb-4">
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-6">From the Founder</p>
+                  <p class="font-serif text-2xl md:text-3xl text-brand-teal leading-snug mb-8">We built Let's Talk Agriculture because the sector needed communication and intelligence infrastructure that understood how it actually works.</p>
+                  <div class="flex items-center gap-3 pt-6 border-t border-brand-border">
+                    <div class="w-8 h-8 rounded-full bg-brand-yellow/20 border border-brand-yellow/30 flex-shrink-0"></div>
+                    <div>
+                      <p class="font-medium text-brand-text text-sm">Sharon Nkwah</p>
+                      <p class="text-brand-muted text-xs">Founder, Let's Talk Agriculture</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SENTRA HIGHLIGHT (Product Led) -->
+          <section class="py-32 bg-[#0B1A1A] text-white relative overflow-hidden">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-teal/20 rounded-full blur-[120px] pointer-events-none"></div>
+            
+            <div class="max-w-[1200px] mx-auto px-6 relative z-10">
+              <div class="text-center mb-16 reveal">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 mb-6 backdrop-blur-sm">
+                  <i data-lucide="activity" class="w-4 h-4 text-brand-yellow"></i>
+                  <span class="text-xs font-medium text-white uppercase tracking-wider">AI-Powered Intelligence</span>
+                </div>
+                <h2 class="display-lg text-white mb-6">Meet Sentra Insights</h2>
+                <p class="text-white/70 max-w-2xl mx-auto text-lg">Real-time customer intelligence tools helping you understand field realities and market conversations instantly.</p>
+              </div>
+
+              <!-- Rendered UI Mockup -->
+              <div class="reveal stagger-2">
+                ${sentraMockupHTML}
+              </div>
+
+              <div class="text-center mt-16 reveal">
+                 <a href="/product" onclick="handleNav(event, '/product')" class="inline-flex items-center gap-2 bg-white text-brand-teal px-8 py-4 rounded-full font-medium hover:bg-gray-100 transition-colors shadow-lg">
+                  Explore the platform <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- CLIENTS / PARTNERS LIST -->
+          <section class="py-24 bg-brand-bg border-t border-brand-border overflow-hidden relative">
+            <div class="max-w-[1200px] mx-auto px-6">
+              <h3 class="text-center font-sans text-sm font-semibold tracking-widest text-brand-muted uppercase mb-12 reveal">Who We Work With</h3>
+              
+              <div class="flex flex-wrap justify-center gap-4 md:gap-8 reveal stagger-1">
+                <div class="px-6 py-3 rounded-full border border-brand-border bg-white text-brand-teal font-medium shadow-sm">agribusinesses</div>
+                <div class="px-6 py-3 rounded-full border border-brand-border bg-white text-brand-teal font-medium shadow-sm">development organizations</div>
+                <div class="px-6 py-3 rounded-full border border-brand-border bg-white text-brand-teal font-medium shadow-sm">ecosystem builders</div>
+                <div class="px-6 py-3 rounded-full border border-brand-border bg-white text-brand-teal font-medium shadow-sm">sustainability initiatives</div>
+                <div class="px-6 py-3 rounded-full border border-brand-border bg-white text-brand-teal font-medium shadow-sm">market systems programs</div>
+                <div class="px-6 py-3 rounded-full border border-brand-border bg-white text-brand-teal font-medium shadow-sm text-center">institutions & founders building across African agriculture</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- PRE-FOOTER CTA -->
+          <section class="py-32 px-6 text-center bg-white border-t border-brand-border">
+            <div class="max-w-[800px] mx-auto reveal">
+              <h2 class="display-lg mb-8">Ready to strengthen your visibility?</h2>
+              <p class="text-xl text-brand-muted mb-10">Let's discuss how our strategic communication and intelligence tools can support your organization.</p>
+              <a href="/contact" onclick="handleNav(event, '/contact')" class="inline-flex items-center gap-2 bg-brand-teal text-white px-10 py-5 rounded-full text-lg font-medium hover:bg-brand-teal/90 transition-all shadow-md hover:shadow-lg">
+                Explore work <i data-lucide="arrow-right" class="w-5 h-5"></i>
+              </a>
+            </div>
+          </section>
+        `;
+      }
+
+      function renderAbout() {
+        app.innerHTML = `
+          <!-- ABOUT HERO -->
+          <section class="relative pt-32 pb-20 md:pt-44 md:pb-28 px-6 overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-[0.03]" style="background-image: linear-gradient(#1B4D4D 1px, transparent 1px), linear-gradient(90deg, #1B4D4D 1px, transparent 1px); background-size: 40px 40px;"></div>
+            <div class="absolute top-0 right-0 w-[40vw] h-[40vw] bg-brand-yellow/5 rounded-full blur-[100px] -z-10 translate-x-1/3 -translate-y-1/3"></div>
+            <div class="max-w-[1000px] mx-auto relative z-10">
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-brand-border shadow-sm mb-8 reveal">
+                <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse"></span>
+                <span class="text-xs font-medium text-brand-teal uppercase tracking-wider">About Us</span>
+              </div>
+              <h1 class="font-serif text-[2rem] md:text-[3rem] leading-[1.1] tracking-[-0.02em] text-brand-teal mb-8 max-w-[760px] reveal stagger-1">Communication, media, and customer intelligence for agriculture.</h1>
+              <p class="text-xl text-brand-muted leading-relaxed max-w-[700px] reveal stagger-2">
+                Let's Talk Agriculture is a communication and media company working across agriculture, food systems, sustainability, and market systems in Africa.
+              </p>
+            </div>
+          </section>
+
+          <!-- MISSION STATEMENT -->
+          <section class="py-16 px-6 bg-white border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto reveal">
+              <p class="text-xl md:text-2xl text-brand-text leading-relaxed font-serif">
+                We help organizations communicate more clearly, strengthen visibility, and build stronger engagement through strategic communication, industry media, editorial storytelling, and customer intelligence.
+              </p>
+            </div>
+          </section>
+
+          <!-- FOUR AREAS -->
+          <section class="py-24 px-6 bg-brand-bg border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto">
+              <div class="mb-14 reveal">
+                <h2 class="font-sans text-sm font-semibold tracking-widest text-brand-muted uppercase mb-3">What We Do</h2>
+                <p class="display-md text-brand-text max-w-[600px]">Our work sits across four connected areas.</p>
+              </div>
+              <div class="grid md:grid-cols-2 gap-6">
+
+                <div class="glass-card p-8 reveal stagger-1">
+                  <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center border border-brand-border mb-5 text-brand-teal">
+                    <i data-lucide="compass" class="w-5 h-5"></i>
+                  </div>
+                  <h3 class="font-serif text-xl text-brand-teal mb-3">Strategic Communication</h3>
+                  <p class="text-brand-muted text-sm leading-relaxed">We help organizations strengthen their narrative, positioning, visibility, and communication direction.</p>
+                </div>
+
+                <div class="glass-card p-8 reveal stagger-2">
+                  <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center border border-brand-border mb-5 text-brand-teal">
+                    <i data-lucide="mic" class="w-5 h-5"></i>
+                  </div>
+                  <h3 class="font-serif text-xl text-brand-teal mb-3">Industry Media</h3>
+                  <p class="text-brand-muted text-sm leading-relaxed">Through Let's Talk Agriculture Forum, we convene podcast conversations, sector dialogues, and thematic discussions exploring the realities shaping African agricultural markets.</p>
+                </div>
+
+                <div class="glass-card p-8 reveal stagger-3">
+                  <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center border border-brand-border mb-5 text-brand-teal">
+                    <i data-lucide="book-open" class="w-5 h-5"></i>
+                  </div>
+                  <h3 class="font-serif text-xl text-brand-teal mb-3">Editorial Storytelling</h3>
+                  <p class="text-brand-muted text-sm leading-relaxed">Through Roots &amp; Reach, we document organizations, systems, and ideas shaping agriculture across Africa through long-form editorial storytelling.</p>
+                </div>
+
+                <div class="glass-card p-8 bg-brand-teal text-white border-none reveal stagger-4 relative overflow-hidden group">
+                  <div class="absolute top-0 right-0 w-48 h-48 bg-brand-yellow/20 rounded-full blur-3xl -z-0 transform group-hover:scale-110 transition-transform duration-700"></div>
+                  <div class="relative z-10">
+                    <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center border border-white/20 mb-5 text-brand-yellow">
+                      <i data-lucide="cpu" class="w-5 h-5"></i>
+                    </div>
+                    <h3 class="font-serif text-xl mb-1">Customer Intelligence</h3>
+                    <span class="text-[10px] uppercase tracking-wider bg-brand-yellow text-brand-teal px-2 py-0.5 rounded-full font-sans font-bold inline-block mb-3">Powered by Sentra</span>
+                    <p class="text-white/80 text-sm leading-relaxed">Through Sentra Insights, we are building AI-powered customer intelligence tools that help organizations better understand customer and field conversations across agriculture.</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- BELIEF SECTION -->
+          <section class="py-24 px-6 bg-white border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto grid md:grid-cols-2 gap-16 items-center">
+              <div class="reveal">
+                <h2 class="font-sans text-sm font-semibold tracking-widest text-brand-muted uppercase mb-4">Our Belief</h2>
+                <p class="display-md text-brand-text mb-6">
+                  Communication should not exist separately from the realities of the sector.
+                </p>
+                <p class="text-brand-muted leading-relaxed mb-4">
+                  Strong communication is built from understanding markets, listening to people, documenting real work, and creating meaningful industry conversations.
+                </p>
+                <p class="text-brand-muted leading-relaxed">
+                  This thinking shapes how we work across every layer of the company.
+                </p>
+              </div>
+              <div class="reveal stagger-1">
+                <img src="https://static.kite.ai/image/upload/v1777711068/app/4706213a-74de-4cf0-a57f-1ffa6427055a/iter3/about-office.png" alt="Let's Talk Agriculture Team Collaboration" class="w-full h-auto rounded-2xl shadow-glass object-cover aspect-[4/3] border border-brand-border">
+              </div>
+            </div>
+          </section>
+
+          <!-- WE WORK WITH -->
+          <section class="py-24 px-6 bg-brand-bg border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto">
+              <div class="mb-12 reveal">
+                <h2 class="font-sans text-sm font-semibold tracking-widest text-brand-muted uppercase mb-3">We Work With</h2>
+              </div>
+              <div class="flex flex-wrap gap-3 reveal stagger-1">
+                <div class="px-6 py-3 rounded-full border border-brand-border bg-white text-brand-teal font-medium shadow-sm text-sm">agribusinesses</div>
+                <div class="px-6 py-3 rounded-full border border-brand-border bg-white text-brand-teal font-medium shadow-sm text-sm">development organizations</div>
+                <div class="px-6 py-3 rounded-full border border-brand-border bg-white text-brand-teal font-medium shadow-sm text-sm">ecosystem builders</div>
+                <div class="px-6 py-3 rounded-full border border-brand-border bg-white text-brand-teal font-medium shadow-sm text-sm">sustainability initiatives</div>
+                <div class="px-6 py-3 rounded-full border border-brand-border bg-white text-brand-teal font-medium shadow-sm text-sm">market systems programs</div>
+                <div class="px-6 py-3 rounded-full border border-brand-border bg-white text-brand-teal font-medium shadow-sm text-sm">institutions and founders building across African agriculture</div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CLOSING BRAND LINE -->
+          <section class="py-24 px-6 bg-white border-t border-brand-border text-center">
+            <div class="max-w-[700px] mx-auto reveal">
+              <p class="font-serif text-2xl md:text-3xl text-brand-teal mb-4">Let's Talk Agriculture</p>
+              <p class="text-lg text-brand-muted">Strategic communication and industry intelligence for African agriculture.</p>
+              <div class="mt-10">
+                <a href="/contact" onclick="handleNav(event, '/contact')" class="inline-flex items-center gap-2 bg-brand-teal text-white px-8 py-4 rounded-full font-medium hover:bg-brand-teal/90 transition-all shadow-md hover:shadow-lg">
+                  Start a conversation <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+        `;
+      }
+
+      function renderServices() {
+        app.innerHTML = `
+          <!-- SERVICES HERO -->
+          <section class="relative pt-32 pb-20 md:pt-44 md:pb-28 px-6 overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-[0.03]" style="background-image: linear-gradient(#1B4D4D 1px, transparent 1px), linear-gradient(90deg, #1B4D4D 1px, transparent 1px); background-size: 40px 40px;"></div>
+            <div class="absolute top-0 right-0 w-[40vw] h-[40vw] bg-brand-yellow/5 rounded-full blur-[100px] -z-10 translate-x-1/3 -translate-y-1/3"></div>
+            <div class="max-w-[1000px] mx-auto relative z-10 reveal">
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-brand-border shadow-sm mb-8">
+                <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse"></span>
+                <span class="text-xs font-medium text-brand-teal uppercase tracking-wider">Services</span>
+              </div>
+              <h1 class="display-xl max-w-[700px]">Our<br>Expertise.</h1>
+            </div>
+          </section>
+
+          <!-- SERVICE 01: ADVISORY -->
+          <section class="py-20 px-6 bg-white border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto">
+              <div class="flex flex-col md:flex-row md:items-start gap-10 md:gap-16 reveal">
+                <div class="md:w-[240px] flex-shrink-0">
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-2">01</p>
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-teal uppercase mb-4">Advisory</p>
+                  <span class="inline-block px-3 py-1 rounded-full bg-brand-bg border border-brand-border text-xs font-medium text-brand-teal">Communications</span>
+                </div>
+                <div class="flex-1">
+                  <h2 class="font-serif text-3xl md:text-4xl text-brand-teal mb-6 leading-snug">We help organizations define a clear, credible narrative and build strategic frameworks to communicate their impact effectively to stakeholders.</h2>
+                  <div class="mt-8 pt-8 border-t border-brand-border">
+                    <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-5">Deliverables</p>
+                    <ul class="space-y-3">
+                      <li class="flex items-center gap-3 text-brand-text">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0"></span>
+                        Narrative &amp; Positioning Session
+                      </li>
+                      <li class="flex items-center gap-3 text-brand-text">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0"></span>
+                        Communication Audit
+                      </li>
+                      <li class="flex items-center gap-3 text-brand-text">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0"></span>
+                        Communication Strategy &amp; Advisory
+                      </li>
+                    </ul>
+                    <a href="/contact" onclick="handleNav(event, '/contact')" class="inline-flex items-center gap-2 mt-8 text-sm font-medium text-brand-teal hover:text-brand-yellow transition-colors group">
+                      Start a conversation <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SERVICE 02: MEDIA -->
+          <section class="py-20 px-6 bg-brand-bg border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto">
+              <div class="flex flex-col md:flex-row md:items-start gap-10 md:gap-16 reveal">
+                <div class="md:w-[240px] flex-shrink-0">
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-2">02</p>
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-teal uppercase mb-4">Let's Talk Agriculture Forum</p>
+                  <span class="inline-block px-3 py-1 rounded-full bg-white border border-brand-border text-xs font-medium text-brand-teal">Media</span>
+                </div>
+                <div class="flex-1">
+                  <h2 class="font-serif text-3xl md:text-4xl text-brand-teal mb-6 leading-snug">Amplify your voice through our established platforms. We position leaders and brands at the forefront of agricultural discourse.</h2>
+                  <div class="mt-8 pt-8 border-t border-brand-border">
+                    <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-5">Deliverables</p>
+                    <ul class="space-y-3">
+                      <li class="flex items-center gap-3 text-brand-text">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0"></span>
+                        Podcast Features (Let's Talk Agriculture)
+                      </li>
+                      <li class="flex items-center gap-3 text-brand-text">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0"></span>
+                        Interviews &amp; Sector Dialogues
+                      </li>
+                      <li class="flex items-center gap-3 text-brand-text">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0"></span>
+                        Thought Leadership Support
+                      </li>
+                    </ul>
+                    <a href="/media" onclick="handleNav(event, '/media')" class="inline-flex items-center gap-2 mt-8 text-sm font-medium text-brand-teal hover:text-brand-yellow transition-colors group">
+                      Explore The Forum <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SERVICE 03: EDITORIAL -->
+          <section class="py-20 px-6 bg-white border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto">
+              <div class="flex flex-col md:flex-row md:items-start gap-10 md:gap-16 reveal">
+                <div class="md:w-[240px] flex-shrink-0">
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-2">03</p>
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-teal uppercase mb-4">Roots and Reach</p>
+                  <span class="inline-block px-3 py-1 rounded-full bg-brand-bg border border-brand-border text-xs font-medium text-brand-teal">Editorial</span>
+                </div>
+                <div class="flex-1">
+                  <h2 class="font-serif text-3xl md:text-4xl text-brand-teal mb-6 leading-snug">High-quality, deeply researched written content that captures your organization's journey, insights, and industry authority.</h2>
+                  <div class="mt-8 pt-8 border-t border-brand-border">
+                    <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-5">Deliverables</p>
+                    <ul class="space-y-3">
+                      <li class="flex items-center gap-3 text-brand-text">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0"></span>
+                        Feature Articles
+                      </li>
+                      <li class="flex items-center gap-3 text-brand-text">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0"></span>
+                        Brand &amp; Leadership Profiles
+                      </li>
+                      <li class="flex items-center gap-3 text-brand-text">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0"></span>
+                        Insight Pieces &amp; Documentation
+                      </li>
+                    </ul>
+                    <a href="/editorial" onclick="handleNav(event, '/editorial')" class="inline-flex items-center gap-2 mt-8 text-sm font-medium text-brand-teal hover:text-brand-yellow transition-colors group">
+                      Explore Roots &amp; Reach <i data-lucide="arrow-right" class="w-4 h-4 transform group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- SERVICES CTA -->
+          <section class="py-24 px-6 bg-brand-bg border-t border-brand-border text-center">
+            <div class="max-w-[700px] mx-auto reveal">
+              <h2 class="display-lg mb-6">Ready to align your strategy?</h2>
+              <a href="/contact" onclick="handleNav(event, '/contact')" class="inline-flex items-center gap-2 bg-brand-teal text-white px-8 py-4 rounded-full font-medium hover:bg-brand-teal/90 transition-all shadow-md hover:shadow-lg">
+                Start a conversation <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </section>
+        `;
+      }
+
+      function renderProduct() {
+        app.innerHTML = `
+          <!-- PRODUCT HERO -->
+          <section class="relative pt-32 pb-12 md:pt-44 md:pb-16 px-6 overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-[0.03]" style="background-image: linear-gradient(#1B4D4D 1px, transparent 1px), linear-gradient(90deg, #1B4D4D 1px, transparent 1px); background-size: 40px 40px;"></div>
+            <div class="absolute top-0 right-0 w-[40vw] h-[40vw] bg-brand-yellow/5 rounded-full blur-[100px] -z-10 translate-x-1/3 -translate-y-1/3"></div>
+            <div class="max-w-[1000px] mx-auto relative z-10">
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-yellow/10 border border-brand-yellow/20 shadow-sm mb-6 reveal">
+                <i data-lucide="sparkles" class="w-4 h-4 text-brand-yellow"></i>
+                <span class="text-xs font-medium text-brand-teal uppercase tracking-wider">Sentra Insights &mdash; Now available</span>
+              </div>
+              <h1 class="font-serif text-[2rem] md:text-[2.75rem] leading-[1.1] tracking-[-0.02em] text-brand-teal mb-3 max-w-[600px] reveal stagger-1">Customer intelligence for agriculture.</h1>
+              <p class="text-base text-brand-muted max-w-[580px] leading-relaxed mb-2 reveal stagger-2">
+                Sentra Insights is an AI-powered platform that turns fragmented field conversations, WhatsApp messages, surveys, and support channels into clear, actionable intelligence for agriculture organizations.
+              </p>
+              <p class="text-sm text-brand-teal font-medium mb-8 reveal stagger-2">Start using Sentra today. No setup required.</p>
+              <div class="flex flex-wrap items-center gap-4 reveal stagger-3">
+                <a href="https://sentra.letstalkagriculture.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-brand-teal text-white px-8 py-4 rounded-full font-semibold hover:bg-brand-teal/90 transition-all shadow-md hover:shadow-lg text-sm">
+                  <i data-lucide="user-plus" class="w-4 h-4"></i> Create account
+                </a>
+                <a href="/contact" onclick="handleNav(event, '/contact')" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-brand-border bg-white text-brand-teal font-medium hover:border-brand-teal hover:shadow-sm transition-all text-sm">
+                  Talk to sales <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- FULL EMBEDDED DASHBOARD PREVIEW -->
+          <section class="bg-[#0B1A1A] border-t border-white/10 relative overflow-hidden">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[400px] bg-brand-teal/10 rounded-full blur-[100px] pointer-events-none"></div>
+            <div class="max-w-[1100px] mx-auto px-6 pt-12 pb-0 relative z-10">
+              <!-- Section label + CTA -->
+              <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 reveal">
+                <div>
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-yellow/80 uppercase mb-2">Dashboard preview &mdash; sample data</p>
+                  <h2 class="font-serif text-xl md:text-2xl text-white">What your team sees inside Sentra</h2>
+                </div>
+                <a href="https://sentra.letstalkagriculture.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-brand-yellow text-brand-teal px-6 py-3 rounded-full font-semibold hover:bg-brand-yellow/90 transition-all shadow-lg text-sm flex-shrink-0">
+                  <i data-lucide="user-plus" class="w-4 h-4"></i> Create account
+                </a>
+              </div>
+
+              <!-- App chrome wrapper -->
+              <div class="rounded-t-2xl overflow-hidden border border-white/10 border-b-0 shadow-2xl reveal stagger-1">
+                <!-- Browser / app top bar -->
+                <div class="bg-[#071010] h-10 flex items-center px-4 gap-3 border-b border-white/10 flex-shrink-0">
+                  <div class="flex gap-1.5"><div class="w-3 h-3 rounded-full bg-white/10"></div><div class="w-3 h-3 rounded-full bg-white/10"></div><div class="w-3 h-3 rounded-full bg-white/10"></div></div>
+                  <div class="flex-1 mx-4 h-5 bg-white/5 rounded-full flex items-center px-3 gap-2 max-w-xs">
+                    <i data-lucide="lock" class="w-2.5 h-2.5 text-white/30"></i>
+                    <span class="text-[10px] text-white/30">sentra.letstalkagriculture.com</span>
+                  </div>
+                  <div class="flex items-center gap-2 ml-auto">
+                    <div class="w-5 h-5 rounded bg-brand-yellow/80 flex items-center justify-center"><i data-lucide="cpu" class="w-3 h-3 text-brand-teal"></i></div>
+                    <span class="text-white/70 text-xs font-semibold">Sentra Insights</span>
+                  </div>
+                </div>
+
+                <!-- App shell -->
+                <div class="flex bg-[#F4F6F8]" style="min-height:520px">
+
+                  <!-- Sidebar -->
+                  <div class="hidden md:flex flex-col w-48 bg-white border-r border-gray-200 flex-shrink-0 py-4">
+                    <div class="px-4 pb-3 mb-3 border-b border-gray-100">
+                      <p class="text-[9px] font-semibold text-gray-400 uppercase tracking-wider mb-0.5">Workspace</p>
+                      <p class="text-xs font-semibold text-gray-700">HortiNigeria</p>
+                    </div>
+                    <div class="px-2 space-y-0.5">
+                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg bg-brand-teal/10 text-brand-teal"><i data-lucide="layout-dashboard" class="w-3.5 h-3.5"></i><span class="text-xs font-medium">Overview</span></div>
+                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg text-gray-500"><i data-lucide="activity" class="w-3.5 h-3.5"></i><span class="text-xs">Sentiment</span></div>
+                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg text-gray-500"><i data-lucide="layers" class="w-3.5 h-3.5"></i><span class="text-xs">Themes</span></div>
+                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg text-gray-500"><i data-lucide="quote" class="w-3.5 h-3.5"></i><span class="text-xs">Quotes</span></div>
+                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg text-gray-500"><i data-lucide="git-compare" class="w-3.5 h-3.5"></i><span class="text-xs">Gaps</span></div>
+                      <div class="flex items-center gap-2.5 px-2 py-1.5 rounded-lg text-gray-500"><i data-lucide="send" class="w-3.5 h-3.5"></i><span class="text-xs">Outbound</span></div>
+                    </div>
+                    <div class="mt-auto px-4 pt-4 border-t border-gray-100">
+                      <p class="text-[9px] text-gray-400 uppercase tracking-wider mb-1.5">Sources</p>
+                      <div class="flex flex-wrap gap-1">
+                        <span class="text-[9px] px-1.5 py-0.5 bg-gray-100 rounded text-gray-500">WhatsApp</span>
+                        <span class="text-[9px] px-1.5 py-0.5 bg-gray-100 rounded text-gray-500">Surveys</span>
+                        <span class="text-[9px] px-1.5 py-0.5 bg-gray-100 rounded text-gray-500">Field</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Main content -->
+                  <div class="flex-1 p-5 overflow-hidden flex flex-col gap-4">
+
+                    <!-- Page header -->
+                    <div class="flex items-center justify-between flex-wrap gap-2">
+                      <div>
+                        <h3 class="text-sm font-semibold text-gray-800">Intelligence Overview</h3>
+                        <p class="text-[10px] text-gray-400">Apr 2025 &middot; Nigeria &amp; East Africa &middot; All channels</p>
+                      </div>
+                      <div class="flex gap-2">
+                        <div class="px-2.5 py-1 text-[10px] bg-white border border-gray-200 rounded-lg text-gray-500">April 2025</div>
+                        <div class="px-2.5 py-1 text-[10px] bg-white border border-gray-200 rounded-lg text-gray-500">All regions</div>
+                      </div>
+                    </div>
+
+                    <!-- KPI cards -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                      <div class="bg-white border border-gray-200 rounded-xl p-3.5">
+                        <p class="text-[9px] font-semibold uppercase tracking-wider text-gray-400 mb-1">Conversations</p>
+                        <p class="text-xl font-bold text-gray-800">1,284</p>
+                        <p class="text-[9px] text-green-500 mt-0.5">+18% vs last month</p>
+                      </div>
+                      <div class="bg-white border border-gray-200 rounded-xl p-3.5">
+                        <p class="text-[9px] font-semibold uppercase tracking-wider text-gray-400 mb-1">Sentiment score</p>
+                        <p class="text-xl font-bold text-red-500">42<span class="text-xs font-normal text-gray-400">/100</span></p>
+                        <p class="text-[9px] text-red-400 mt-0.5">Mostly negative</p>
+                      </div>
+                      <div class="bg-white border border-gray-200 rounded-xl p-3.5 hidden md:block">
+                        <p class="text-[9px] font-semibold uppercase tracking-wider text-gray-400 mb-1">Top theme</p>
+                        <p class="text-xs font-semibold text-gray-800 mt-1 leading-tight">Delivery &amp; logistics</p>
+                        <p class="text-[9px] text-gray-400 mt-0.5">82% occurrence</p>
+                      </div>
+                      <div class="bg-white border border-gray-200 rounded-xl p-3.5 hidden md:block">
+                        <p class="text-[9px] font-semibold uppercase tracking-wider text-gray-400 mb-1">Regions</p>
+                        <p class="text-xl font-bold text-gray-800">7</p>
+                        <p class="text-[9px] text-gray-400 mt-0.5">NG, KE, UG, GH</p>
+                      </div>
+                    </div>
+
+                    <!-- Sentiment + Themes -->
+                    <div class="grid md:grid-cols-2 gap-3">
+                      <!-- Sentiment chart -->
+                      <div class="bg-white border border-gray-200 rounded-xl p-4">
+                        <div class="flex items-center justify-between mb-3">
+                          <p class="text-xs font-semibold text-gray-700">Sentiment distribution</p>
+                          <span class="text-[9px] text-gray-400">1,284 conversations</span>
+                        </div>
+                        <div class="flex items-end gap-3 h-20 mb-3">
+                          <div class="flex flex-col items-center gap-1 flex-1">
+                            <div class="w-full bg-red-400 rounded-t" style="height:68%"></div>
+                            <p class="text-[9px] text-gray-500">Negative</p>
+                            <p class="text-[10px] font-bold text-gray-700">52%</p>
+                          </div>
+                          <div class="flex flex-col items-center gap-1 flex-1">
+                            <div class="w-full bg-gray-300 rounded-t" style="height:34%"></div>
+                            <p class="text-[9px] text-gray-500">Neutral</p>
+                            <p class="text-[10px] font-bold text-gray-700">26%</p>
+                          </div>
+                          <div class="flex flex-col items-center gap-1 flex-1">
+                            <div class="w-full bg-green-400 rounded-t" style="height:28%"></div>
+                            <p class="text-[9px] text-gray-500">Positive</p>
+                            <p class="text-[10px] font-bold text-gray-700">22%</p>
+                          </div>
+                        </div>
+                        <div class="h-1.5 w-full rounded-full overflow-hidden flex">
+                          <div class="bg-red-400" style="width:52%"></div><div class="bg-gray-200" style="width:26%"></div><div class="bg-green-400" style="width:22%"></div>
+                        </div>
+                      </div>
+                      <!-- Theme list -->
+                      <div class="bg-white border border-gray-200 rounded-xl p-4">
+                        <p class="text-xs font-semibold text-gray-700 mb-3">Top themes</p>
+                        <div class="space-y-2">
+                          <div class="flex items-center gap-2"><span class="text-[9px] text-gray-600 w-32 flex-shrink-0">Delivery &amp; logistics</span><div class="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-brand-teal rounded-full" style="width:82%"></div></div><span class="text-[9px] text-gray-400 w-6 text-right">82%</span></div>
+                          <div class="flex items-center gap-2"><span class="text-[9px] text-gray-600 w-32 flex-shrink-0">Input pricing</span><div class="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-brand-teal/80 rounded-full" style="width:71%"></div></div><span class="text-[9px] text-gray-400 w-6 text-right">71%</span></div>
+                          <div class="flex items-center gap-2"><span class="text-[9px] text-gray-600 w-32 flex-shrink-0">Product quality</span><div class="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-brand-teal/60 rounded-full" style="width:64%"></div></div><span class="text-[9px] text-gray-400 w-6 text-right">64%</span></div>
+                          <div class="flex items-center gap-2"><span class="text-[9px] text-gray-600 w-32 flex-shrink-0">Training gaps</span><div class="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-brand-yellow/80 rounded-full" style="width:53%"></div></div><span class="text-[9px] text-gray-400 w-6 text-right">53%</span></div>
+                          <div class="flex items-center gap-2"><span class="text-[9px] text-gray-600 w-32 flex-shrink-0">Customer trust</span><div class="flex-1 h-1.5 bg-gray-100 rounded-full overflow-hidden"><div class="h-full bg-brand-yellow/60 rounded-full" style="width:47%"></div></div><span class="text-[9px] text-gray-400 w-6 text-right">47%</span></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Quote + conversations row -->
+                    <div class="grid md:grid-cols-2 gap-3">
+                      <!-- Quote card -->
+                      <div class="bg-white border border-gray-200 rounded-xl p-4">
+                        <div class="flex items-center justify-between mb-3">
+                          <p class="text-xs font-semibold text-gray-700">Extracted quote</p>
+                          <span class="text-[9px] px-2 py-0.5 bg-red-50 border border-red-100 text-red-500 rounded-full font-semibold">Negative</span>
+                        </div>
+                        <p class="font-serif text-xs text-gray-700 leading-relaxed italic">"The fertiliser arrived two weeks after planting season. By then it was too late for most farmers in our zone."</p>
+                        <p class="text-[9px] text-gray-400 mt-2">Field report &middot; WhatsApp &middot; Kano, Nigeria</p>
+                      </div>
+                      <!-- Recent conversations -->
+                      <div class="bg-white border border-gray-200 rounded-xl overflow-hidden">
+                        <div class="px-4 py-2.5 border-b border-gray-100 flex items-center justify-between">
+                          <p class="text-xs font-semibold text-gray-700">Recent conversations</p>
+                          <span class="text-[9px] text-gray-400">Last 48h</span>
+                        </div>
+                        <div class="divide-y divide-gray-100">
+                          <div class="flex items-center px-4 py-2 gap-3">
+                            <span class="text-[9px] font-medium text-brand-teal bg-brand-teal/5 border border-brand-teal/10 px-1.5 py-0.5 rounded-full flex-shrink-0">WhatsApp</span>
+                            <span class="text-[10px] text-gray-700 flex-1 truncate">Delivery delay — Kano, NG</span>
+                            <span class="w-2 h-2 rounded-full bg-red-400 flex-shrink-0"></span>
+                          </div>
+                          <div class="flex items-center px-4 py-2 gap-3">
+                            <span class="text-[9px] font-medium text-brand-teal bg-brand-teal/5 border border-brand-teal/10 px-1.5 py-0.5 rounded-full flex-shrink-0">Survey</span>
+                            <span class="text-[10px] text-gray-700 flex-1 truncate">Cooperative feedback — Nakuru, KE</span>
+                            <span class="w-2 h-2 rounded-full bg-green-400 flex-shrink-0"></span>
+                          </div>
+                          <div class="flex items-center px-4 py-2 gap-3">
+                            <span class="text-[9px] font-medium text-brand-teal bg-brand-teal/5 border border-brand-teal/10 px-1.5 py-0.5 rounded-full flex-shrink-0">Field</span>
+                            <span class="text-[10px] text-gray-700 flex-1 truncate">Loan repayment issue — Ogun, NG</span>
+                            <span class="w-2 h-2 rounded-full bg-red-400 flex-shrink-0"></span>
+                          </div>
+                          <div class="flex items-center px-4 py-2 gap-3">
+                            <span class="text-[9px] font-medium text-brand-teal bg-brand-teal/5 border border-brand-teal/10 px-1.5 py-0.5 rounded-full flex-shrink-0">Support</span>
+                            <span class="text-[10px] text-gray-700 flex-1 truncate">Language barrier — Kaduna, NG</span>
+                            <span class="w-2 h-2 rounded-full bg-gray-300 flex-shrink-0"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div><!-- end main content -->
+                </div><!-- end app shell -->
+              </div><!-- end chrome -->
+
+              <!-- CTA bar below dashboard -->
+              <div class="flex flex-col md:flex-row items-center justify-between gap-4 py-6 px-2 reveal stagger-2">
+                <p class="text-white/40 text-xs">Sample data &middot; Preview only &middot; Create an account to connect your own data</p>
+                <a href="https://sentra.letstalkagriculture.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-brand-yellow text-brand-teal px-6 py-2.5 rounded-full font-semibold hover:bg-brand-yellow/90 transition-all shadow-lg text-xs flex-shrink-0">
+                  <i data-lucide="user-plus" class="w-3.5 h-3.5"></i> Create account &mdash; it's free to start
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- HOW IT WORKS -->
+          <section class="py-20 px-6 bg-white border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto">
+              <div class="text-center mb-12 reveal">
+                <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-3">How it works</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-brand-teal">From raw conversations to clear insight in four steps.</h2>
+              </div>
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4 reveal stagger-1">
+                <div class="flex flex-col items-start p-6 bg-brand-bg border border-brand-border rounded-2xl relative">
+                  <div class="w-8 h-8 rounded-full bg-brand-teal text-white text-xs font-bold flex items-center justify-center mb-4 flex-shrink-0">1</div>
+                  <i data-lucide="message-circle" class="w-5 h-5 text-brand-teal mb-3"></i>
+                  <h3 class="font-semibold text-brand-text text-sm mb-1">Connect data</h3>
+                  <p class="text-brand-muted text-xs leading-relaxed">Upload WhatsApp exports, CSV files, surveys, or field reports.</p>
+                </div>
+                <div class="flex flex-col items-start p-6 bg-brand-bg border border-brand-border rounded-2xl">
+                  <div class="w-8 h-8 rounded-full bg-brand-teal text-white text-xs font-bold flex items-center justify-center mb-4 flex-shrink-0">2</div>
+                  <i data-lucide="cpu" class="w-5 h-5 text-brand-teal mb-3"></i>
+                  <h3 class="font-semibold text-brand-text text-sm mb-1">AI analysis</h3>
+                  <p class="text-brand-muted text-xs leading-relaxed">Sentra processes conversations for sentiment, themes, and patterns.</p>
+                </div>
+                <div class="flex flex-col items-start p-6 bg-brand-bg border border-brand-border rounded-2xl">
+                  <div class="w-8 h-8 rounded-full bg-brand-teal text-white text-xs font-bold flex items-center justify-center mb-4 flex-shrink-0">3</div>
+                  <i data-lucide="layers" class="w-5 h-5 text-brand-teal mb-3"></i>
+                  <h3 class="font-semibold text-brand-text text-sm mb-1">Surface patterns</h3>
+                  <p class="text-brand-muted text-xs leading-relaxed">See recurring themes, extracted quotes, and messaging gaps on your dashboard.</p>
+                </div>
+                <div class="flex flex-col items-start p-6 bg-brand-teal text-white border border-brand-teal rounded-2xl">
+                  <div class="w-8 h-8 rounded-full bg-white/20 text-white text-xs font-bold flex items-center justify-center mb-4 flex-shrink-0">4</div>
+                  <i data-lucide="zap" class="w-5 h-5 text-brand-yellow mb-3"></i>
+                  <h3 class="font-semibold text-sm mb-1">Act on insight</h3>
+                  <p class="text-white/80 text-xs leading-relaxed">Send targeted outbound messages, update strategy, and close the feedback loop.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- CORE FEATURES -->
+          <section class="py-20 px-6 bg-brand-bg border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto">
+              <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-12 reveal">
+                <div>
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-2">Features</p>
+                  <h2 class="font-serif text-2xl md:text-3xl text-brand-teal">Everything your team needs to understand customers.</h2>
+                </div>
+                <a href="https://sentra.letstalkagriculture.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-brand-teal text-white px-6 py-3 rounded-full font-semibold hover:bg-brand-teal/90 transition-all shadow-md text-sm flex-shrink-0">
+                  <i data-lucide="user-plus" class="w-4 h-4"></i> Create account
+                </a>
+              </div>
+              <div class="grid md:grid-cols-3 gap-5 reveal stagger-1">
+                <div class="bg-white border border-brand-border rounded-2xl p-6 hover:shadow-glass-hover transition-shadow">
+                  <div class="w-9 h-9 rounded-lg bg-brand-teal/10 flex items-center justify-center mb-4 text-brand-teal"><i data-lucide="activity" class="w-4 h-4"></i></div>
+                  <h3 class="font-semibold text-brand-text mb-2">Sentiment Dashboard</h3>
+                  <p class="text-brand-muted text-sm">Real-time sentiment tracking across products, regions, and channels.</p>
+                </div>
+                <div class="bg-white border border-brand-border rounded-2xl p-6 hover:shadow-glass-hover transition-shadow">
+                  <div class="w-9 h-9 rounded-lg bg-brand-teal/10 flex items-center justify-center mb-4 text-brand-teal"><i data-lucide="layers" class="w-4 h-4"></i></div>
+                  <h3 class="font-semibold text-brand-text mb-2">Theme Clustering</h3>
+                  <p class="text-brand-muted text-sm">AI groups recurring topics automatically: pricing, delivery, trust, adoption, and more.</p>
+                </div>
+                <div class="bg-white border border-brand-border rounded-2xl p-6 hover:shadow-glass-hover transition-shadow">
+                  <div class="w-9 h-9 rounded-lg bg-brand-teal/10 flex items-center justify-center mb-4 text-brand-teal"><i data-lucide="quote" class="w-4 h-4"></i></div>
+                  <h3 class="font-semibold text-brand-text mb-2">Quote Extraction</h3>
+                  <p class="text-brand-muted text-sm">Pull verbatim customer quotes for reports, stakeholder updates, and communication.</p>
+                </div>
+                <div class="bg-white border border-brand-border rounded-2xl p-6 hover:shadow-glass-hover transition-shadow">
+                  <div class="w-9 h-9 rounded-lg bg-brand-teal/10 flex items-center justify-center mb-4 text-brand-teal"><i data-lucide="git-compare" class="w-4 h-4"></i></div>
+                  <h3 class="font-semibold text-brand-text mb-2">Messaging Gap Analysis</h3>
+                  <p class="text-brand-muted text-sm">See exactly where your messaging breaks down between intent and field reality.</p>
+                </div>
+                <div class="bg-white border border-brand-border rounded-2xl p-6 hover:shadow-glass-hover transition-shadow">
+                  <div class="w-9 h-9 rounded-lg bg-brand-teal/10 flex items-center justify-center mb-4 text-brand-teal"><i data-lucide="send" class="w-4 h-4"></i></div>
+                  <h3 class="font-semibold text-brand-text mb-2">Outbound Messaging</h3>
+                  <p class="text-brand-muted text-sm">Generate WhatsApp and SMS responses aligned with what customers are actually experiencing.</p>
+                </div>
+                <div class="bg-brand-teal rounded-2xl p-6 relative overflow-hidden group">
+                  <div class="absolute top-0 right-0 w-32 h-32 bg-brand-yellow/20 rounded-full blur-2xl pointer-events-none group-hover:scale-110 transition-transform duration-500"></div>
+                  <div class="relative z-10">
+                    <div class="w-9 h-9 rounded-lg bg-white/10 flex items-center justify-center mb-4 text-brand-yellow"><i data-lucide="globe-2" class="w-4 h-4"></i></div>
+                    <h3 class="font-semibold text-white mb-2">Multilingual Intelligence</h3>
+                    <p class="text-white/80 text-sm">Analyze conversations across local languages while preserving tone and nuance.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- WHO IT IS FOR -->
+          <section class="py-20 px-6 bg-white border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto">
+              <div class="text-center mb-12 reveal">
+                <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-2">Built for</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-brand-teal">Teams working across African agricultural markets.</h2>
+              </div>
+              <div class="grid grid-cols-2 md:grid-cols-4 gap-4 reveal stagger-1">
+                <div class="bg-brand-bg border border-brand-border rounded-xl p-5">
+                  <i data-lucide="building-2" class="w-5 h-5 text-brand-teal mb-3"></i>
+                  <p class="font-semibold text-brand-text text-sm">Agribusinesses</p>
+                  <p class="text-brand-muted text-xs mt-1">Understand customer feedback at scale across your distribution network.</p>
+                </div>
+                <div class="bg-brand-bg border border-brand-border rounded-xl p-5">
+                  <i data-lucide="users" class="w-5 h-5 text-brand-teal mb-3"></i>
+                  <p class="font-semibold text-brand-text text-sm">Cooperatives</p>
+                  <p class="text-brand-muted text-xs mt-1">Track member sentiment and identify recurring challenges across groups.</p>
+                </div>
+                <div class="bg-brand-bg border border-brand-border rounded-xl p-5">
+                  <i data-lucide="trending-up" class="w-5 h-5 text-brand-teal mb-3"></i>
+                  <p class="font-semibold text-brand-text text-sm">Food brands</p>
+                  <p class="text-brand-muted text-xs mt-1">Monitor brand perception and product feedback across markets and channels.</p>
+                </div>
+                <div class="bg-brand-bg border border-brand-border rounded-xl p-5">
+                  <i data-lucide="landmark" class="w-5 h-5 text-brand-teal mb-3"></i>
+                  <p class="font-semibold text-brand-text text-sm">Ag finance orgs</p>
+                  <p class="text-brand-muted text-xs mt-1">Understand borrower experience and repayment communication gaps.</p>
+                </div>
+                <div class="bg-brand-bg border border-brand-border rounded-xl p-5">
+                  <i data-lucide="git-branch" class="w-5 h-5 text-brand-teal mb-3"></i>
+                  <p class="font-semibold text-brand-text text-sm">Outgrower schemes</p>
+                  <p class="text-brand-muted text-xs mt-1">Capture field officer reports and farmer feedback in one view.</p>
+                </div>
+                <div class="bg-brand-bg border border-brand-border rounded-xl p-5">
+                  <i data-lucide="package" class="w-5 h-5 text-brand-teal mb-3"></i>
+                  <p class="font-semibold text-brand-text text-sm">Distributors</p>
+                  <p class="text-brand-muted text-xs mt-1">Surface issues in delivery, pricing, and product performance before they escalate.</p>
+                </div>
+                <div class="bg-brand-bg border border-brand-border rounded-xl p-5">
+                  <i data-lucide="globe" class="w-5 h-5 text-brand-teal mb-3"></i>
+                  <p class="font-semibold text-brand-text text-sm">Development programs</p>
+                  <p class="text-brand-muted text-xs mt-1">Map stakeholder sentiment and communicate programme progress with clarity.</p>
+                </div>
+                <div class="bg-brand-teal rounded-xl p-5 flex flex-col justify-between">
+                  <i data-lucide="cpu" class="w-5 h-5 text-brand-yellow mb-3"></i>
+                  <p class="font-semibold text-white text-sm mb-2">Ready to get started?</p>
+                  <a href="https://sentra.letstalkagriculture.com" target="_blank" rel="noopener" class="inline-flex items-center gap-1 text-brand-yellow text-xs font-semibold hover:text-white transition-colors">
+                    Create account <i data-lucide="arrow-right" class="w-3 h-3"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- INTEGRATIONS -->
+          <section class="py-20 px-6 bg-brand-bg border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto">
+              <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10 reveal">
+                <div>
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-2">Integrations</p>
+                  <h2 class="font-serif text-2xl text-brand-teal">Connect the tools your team already uses.</h2>
+                </div>
+              </div>
+              <div class="grid md:grid-cols-2 gap-6 reveal stagger-1">
+                <div class="bg-white border border-brand-border rounded-2xl p-6">
+                  <div class="flex items-center gap-2 mb-4">
+                    <span class="w-2 h-2 rounded-full bg-brand-teal flex-shrink-0"></span>
+                    <p class="font-semibold text-brand-text text-sm">Available now</p>
+                  </div>
+                  <div class="space-y-3">
+                    <div class="flex items-center gap-3 p-3 bg-brand-bg rounded-lg border border-brand-border">
+                      <i data-lucide="message-square" class="w-4 h-4 text-brand-teal flex-shrink-0"></i>
+                      <span class="text-sm text-brand-text">WhatsApp import</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 bg-brand-bg rounded-lg border border-brand-border">
+                      <i data-lucide="file-spreadsheet" class="w-4 h-4 text-brand-teal flex-shrink-0"></i>
+                      <span class="text-sm text-brand-text">CSV &amp; Excel uploads</span>
+                    </div>
+                    <div class="flex items-center gap-3 p-3 bg-brand-bg rounded-lg border border-brand-border">
+                      <i data-lucide="table" class="w-4 h-4 text-brand-teal flex-shrink-0"></i>
+                      <span class="text-sm text-brand-text">Google Sheets sync</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white border border-brand-border rounded-2xl p-6">
+                  <div class="flex items-center gap-2 mb-4">
+                    <span class="w-2 h-2 rounded-full bg-brand-yellow flex-shrink-0"></span>
+                    <p class="font-semibold text-brand-text text-sm">Coming soon</p>
+                  </div>
+                  <div class="flex flex-wrap gap-2">
+                    <span class="px-3 py-1.5 text-xs bg-brand-bg border border-brand-border rounded-full text-brand-muted">HubSpot</span>
+                    <span class="px-3 py-1.5 text-xs bg-brand-bg border border-brand-border rounded-full text-brand-muted">Zoho CRM</span>
+                    <span class="px-3 py-1.5 text-xs bg-brand-bg border border-brand-border rounded-full text-brand-muted">QuickBooks</span>
+                    <span class="px-3 py-1.5 text-xs bg-brand-bg border border-brand-border rounded-full text-brand-muted">Xero</span>
+                    <span class="px-3 py-1.5 text-xs bg-brand-bg border border-brand-border rounded-full text-brand-muted">Enterprise API</span>
+                  </div>
+                  <p class="text-brand-muted text-xs mt-4">Enterprise API available for custom integrations. <a href="/contact" onclick="handleNav(event,'/contact')" class="text-brand-teal underline hover:text-brand-yellow">Talk to us.</a></p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- PRICING -->
+          <section class="py-20 px-6 bg-white border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto">
+              <div class="text-center mb-12 reveal">
+                <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-2">Pricing</p>
+                <h2 class="font-serif text-2xl md:text-3xl text-brand-teal mb-3">Simple, transparent pricing.</h2>
+                <p class="text-brand-muted text-sm max-w-md mx-auto">Start free. Scale as your team grows. All plans include core intelligence features.</p>
+              </div>
+              <div class="grid md:grid-cols-3 gap-6 reveal stagger-1">
+
+                <!-- Starter -->
+                <div class="bg-brand-bg border border-brand-border rounded-2xl p-6 flex flex-col">
+                  <div class="mb-6">
+                    <p class="font-semibold text-brand-text mb-1">Starter</p>
+                    <p class="text-3xl font-bold text-brand-text">Free</p>
+                    <p class="text-brand-muted text-xs mt-1">Up to 500 conversations/month</p>
+                  </div>
+                  <ul class="space-y-2 mb-8 flex-1">
+                    <li class="flex items-center gap-2 text-sm text-brand-muted"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-teal flex-shrink-0"></i>Sentiment dashboard</li>
+                    <li class="flex items-center gap-2 text-sm text-brand-muted"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-teal flex-shrink-0"></i>Theme clustering</li>
+                    <li class="flex items-center gap-2 text-sm text-brand-muted"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-teal flex-shrink-0"></i>CSV &amp; WhatsApp import</li>
+                    <li class="flex items-center gap-2 text-sm text-brand-muted"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-teal flex-shrink-0"></i>1 workspace</li>
+                  </ul>
+                  <a href="https://sentra.letstalkagriculture.com" target="_blank" rel="noopener" class="w-full text-center py-3 rounded-full border border-brand-border text-brand-teal font-medium text-sm hover:border-brand-teal hover:bg-brand-teal hover:text-white transition-all">
+                    Create free account
+                  </a>
+                </div>
+
+                <!-- Growth -->
+                <div class="bg-brand-teal rounded-2xl p-6 flex flex-col relative overflow-hidden shadow-lg">
+                  <div class="absolute top-4 right-4 text-[10px] font-bold uppercase tracking-wider bg-brand-yellow text-brand-teal px-2 py-0.5 rounded-full">Popular</div>
+                  <div class="absolute bottom-0 right-0 w-40 h-40 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
+                  <div class="relative z-10 flex flex-col flex-1">
+                    <div class="mb-6">
+                      <p class="font-semibold text-white mb-1">Growth</p>
+                      <p class="text-3xl font-bold text-white">$49<span class="text-sm font-normal text-white/60">/mo</span></p>
+                      <p class="text-white/60 text-xs mt-1">Up to 5,000 conversations/month</p>
+                    </div>
+                    <ul class="space-y-2 mb-8 flex-1">
+                      <li class="flex items-center gap-2 text-sm text-white/80"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-yellow flex-shrink-0"></i>Everything in Starter</li>
+                      <li class="flex items-center gap-2 text-sm text-white/80"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-yellow flex-shrink-0"></i>Quote extraction</li>
+                      <li class="flex items-center gap-2 text-sm text-white/80"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-yellow flex-shrink-0"></i>Messaging gap analysis</li>
+                      <li class="flex items-center gap-2 text-sm text-white/80"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-yellow flex-shrink-0"></i>Outbound messaging</li>
+                      <li class="flex items-center gap-2 text-sm text-white/80"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-yellow flex-shrink-0"></i>3 workspaces</li>
+                    </ul>
+                    <a href="https://sentra.letstalkagriculture.com" target="_blank" rel="noopener" class="w-full text-center py-3 rounded-full bg-brand-yellow text-brand-teal font-semibold text-sm hover:bg-brand-yellow/90 transition-all">
+                      Start free trial
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="bg-brand-bg border border-brand-border rounded-2xl p-6 flex flex-col">
+                  <div class="mb-6">
+                    <p class="font-semibold text-brand-text mb-1">Enterprise</p>
+                    <p class="text-3xl font-bold text-brand-text">Custom</p>
+                    <p class="text-brand-muted text-xs mt-1">Unlimited conversations</p>
+                  </div>
+                  <ul class="space-y-2 mb-8 flex-1">
+                    <li class="flex items-center gap-2 text-sm text-brand-muted"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-teal flex-shrink-0"></i>Everything in Growth</li>
+                    <li class="flex items-center gap-2 text-sm text-brand-muted"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-teal flex-shrink-0"></i>Multilingual intelligence</li>
+                    <li class="flex items-center gap-2 text-sm text-brand-muted"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-teal flex-shrink-0"></i>API &amp; custom integrations</li>
+                    <li class="flex items-center gap-2 text-sm text-brand-muted"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-teal flex-shrink-0"></i>Dedicated onboarding</li>
+                    <li class="flex items-center gap-2 text-sm text-brand-muted"><i data-lucide="check" class="w-3.5 h-3.5 text-brand-teal flex-shrink-0"></i>Unlimited workspaces</li>
+                  </ul>
+                  <a href="/contact" onclick="handleNav(event,'/contact')" class="w-full text-center py-3 rounded-full border border-brand-border text-brand-teal font-medium text-sm hover:border-brand-teal hover:bg-brand-teal hover:text-white transition-all">
+                    Talk to sales
+                  </a>
+                </div>
+
+              </div>
+              <p class="text-center text-brand-muted text-xs mt-8 reveal">Pricing is indicative. Final pricing confirmed on account creation. No credit card required for free tier.</p>
+            </div>
+          </section>
+
+          <!-- FINAL CTA -->
+          <section class="py-28 px-6 bg-[#0B1A1A] border-t border-white/10 text-center relative overflow-hidden">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] bg-brand-teal/15 rounded-full blur-[100px] pointer-events-none"></div>
+            <div class="max-w-[640px] mx-auto reveal relative z-10">
+              <p class="font-sans text-xs font-semibold tracking-widest text-brand-yellow/70 uppercase mb-5">Get started today</p>
+              <h2 class="font-serif text-[1.75rem] md:text-[2.5rem] leading-[1.1] tracking-[-0.02em] text-white mb-4">Turn your conversations into intelligence.</h2>
+              <p class="text-white/60 text-sm mb-10">Connect your first data source in minutes. No technical setup. Free to start.</p>
+              <div class="flex flex-wrap items-center justify-center gap-4">
+                <a href="https://sentra.letstalkagriculture.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-brand-yellow text-brand-teal px-10 py-4 rounded-full text-base font-bold hover:bg-brand-yellow/90 transition-all shadow-xl">
+                  <i data-lucide="user-plus" class="w-5 h-5"></i> Create account
+                </a>
+                <a href="/contact" onclick="handleNav(event, '/contact')" class="inline-flex items-center gap-2 px-7 py-3.5 rounded-full border border-white/20 bg-white/5 text-white font-medium hover:bg-white/10 transition-all text-sm">
+                  Talk to sales <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </a>
+              </div>
+              <p class="text-white/25 text-xs mt-6">sentra.letstalkagriculture.com &mdash; A product by Let's Talk Agriculture</p>
+            </div>
+          </section>
+        `;
+      }
+
+      function renderMedia() {
+        app.innerHTML = `
+          <!-- MEDIA HERO -->
+          <section class="relative pt-32 pb-20 md:pt-44 md:pb-28 px-6 overflow-hidden bg-[#0B1A1A]">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] bg-brand-teal/20 rounded-full blur-[120px] pointer-events-none"></div>
+            <div class="max-w-[1000px] mx-auto relative z-10">
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/10 border border-white/20 mb-8 reveal backdrop-blur-sm">
+                <i data-lucide="mic" class="w-4 h-4 text-brand-yellow"></i>
+                <span class="text-xs font-medium text-white uppercase tracking-wider">Media Platform</span>
+              </div>
+              <h1 class="display-xl text-white mb-4 reveal stagger-1">Let's Talk Agriculture Forum</h1>
+              <p class="font-serif text-2xl text-white/70 italic mb-6 reveal stagger-2">Where conversations become visibility.</p>
+              <p class="text-lg text-white/60 max-w-[700px] leading-relaxed reveal stagger-3">
+                The Forum is the lead media platform for agricultural dialogue, home to the Let's Talk Agriculture Podcast and curated conversations that keep leaders visible with credibility.
+              </p>
+            </div>
+          </section>
+
+          <!-- PLATFORM LINKS & STATS -->
+          <section class="py-16 px-6 bg-white border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto">
+              <div class="flex flex-col md:flex-row md:items-center gap-8 mb-16 reveal">
+                <div class="flex-1">
+                  <p class="text-brand-muted mb-4">Stay close to new releases. Choose your platform and support the Forum to keep independent agricultural storytelling strong.</p>
+                  <div class="flex flex-wrap gap-3">
+                    <a href="https://podcasts.apple.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-brand-teal text-white text-sm font-medium hover:bg-brand-teal/90 transition-colors shadow-sm">
+                      <i data-lucide="headphones" class="w-4 h-4"></i> Apple Podcasts
+                    </a>
+                    <a href="https://open.spotify.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-[#1DB954] text-white text-sm font-medium hover:opacity-90 transition-opacity shadow-sm">
+                      <i data-lucide="music" class="w-4 h-4"></i> Spotify
+                    </a>
+                    <a href="https://selar.com/showlove/theletstalkagriculturepodcast" target="_blank" rel="noopener" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-brand-border bg-brand-bg text-brand-teal text-sm font-medium hover:border-brand-teal transition-colors">
+                       Support the Podcast
+                     </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- STATS -->
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-6 reveal stagger-1">
+                <div class="glass-card p-8 text-center">
+                  <p class="font-serif text-5xl text-brand-teal mb-2">25k+</p>
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase">Listeners in 70+ Countries</p>
+                </div>
+                <div class="glass-card p-8 text-center">
+                  <p class="font-serif text-5xl text-brand-teal mb-2">100+</p>
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase">Episodes Published</p>
+                </div>
+                <div class="glass-card p-8 text-center">
+                  <p class="font-serif text-5xl text-brand-teal mb-2">100+</p>
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase">Guests Featured</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- FORUM FOCUS -->
+          <section class="py-20 px-6 bg-brand-bg border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto">
+              <div class="mb-12 reveal">
+                <h2 class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-3">Forum Focus</h2>
+              </div>
+              <div class="grid md:grid-cols-3 gap-6 reveal stagger-1">
+                <div class="glass-card p-8">
+                  <div class="w-10 h-10 rounded-lg bg-brand-bg flex items-center justify-center border border-brand-border mb-5 text-brand-teal">
+                    <i data-lucide="mic-2" class="w-5 h-5"></i>
+                  </div>
+                  <h3 class="font-serif text-lg text-brand-teal mb-3">Podcast features</h3>
+                  <p class="text-brand-muted text-sm leading-relaxed">Segmented episodes crafted to help leaders show up with clarity.</p>
+                </div>
+                <div class="glass-card p-8">
+                  <div class="w-10 h-10 rounded-lg bg-brand-bg flex items-center justify-center border border-brand-border mb-5 text-brand-teal">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                  </div>
+                  <h3 class="font-serif text-lg text-brand-teal mb-3">Curated dialogues</h3>
+                  <p class="text-brand-muted text-sm leading-relaxed">Moderated conversations that unpack markets, policy, and practice.</p>
+                </div>
+                <div class="glass-card p-8">
+                  <div class="w-10 h-10 rounded-lg bg-brand-bg flex items-center justify-center border border-brand-border mb-5 text-brand-teal">
+                    <i data-lucide="trending-up" class="w-5 h-5"></i>
+                  </div>
+                  <h3 class="font-serif text-lg text-brand-teal mb-3">Thought leadership</h3>
+                  <p class="text-brand-muted text-sm leading-relaxed">Executive visibility and stories aligned to sector realities.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- GUEST APPLICATIONS -->
+          <section class="py-24 px-6 bg-white border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto reveal">
+              <div class="glass-card p-10 md:p-16 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-80 h-80 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="relative z-10 max-w-[620px]">
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-5">Podcast Guest Applications</p>
+                  <h2 class="font-serif text-3xl md:text-4xl text-brand-teal leading-snug mb-5">Join us on the Let's Talk Agriculture Podcast</h2>
+                  <p class="text-brand-muted leading-relaxed mb-10">Share your expertise in agriculture, sustainability, and market systems with our audience of practitioners, investors, and sector leaders.</p>
+                  <a href="https://tally.so/r/w4g0qB" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-brand-teal text-white px-8 py-4 rounded-full font-medium hover:bg-brand-teal/90 transition-all shadow-md hover:shadow-lg">
+                    Apply to be a guest <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- MEDIA CTA -->
+          <section class="py-24 px-6 bg-brand-bg border-t border-brand-border text-center">
+            <div class="max-w-[700px] mx-auto reveal">
+              <h2 class="display-lg mb-6">Ready to clarify your narrative?</h2>
+              <p class="text-lg text-brand-muted mb-10">We help organizations communicate their work in a way that is clear, credible, and easy to understand.</p>
+              <a href="/contact" onclick="handleNav(event, '/contact')" class="inline-flex items-center gap-2 bg-brand-teal text-white px-8 py-4 rounded-full font-medium hover:bg-brand-teal/90 transition-all shadow-md hover:shadow-lg">
+                Start a conversation <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </section>
+        `;
+      }
+
+      function renderEditorial() {
+        app.innerHTML = `
+          <!-- EDITORIAL HERO -->
+          <section class="relative pt-32 pb-20 md:pt-44 md:pb-28 px-6 overflow-hidden">
+            <div class="absolute inset-0 z-0 opacity-[0.03]" style="background-image: linear-gradient(#1B4D4D 1px, transparent 1px), linear-gradient(90deg, #1B4D4D 1px, transparent 1px); background-size: 40px 40px;"></div>
+            <div class="absolute top-0 right-0 w-[40vw] h-[40vw] bg-brand-yellow/5 rounded-full blur-[100px] -z-10 translate-x-1/3 -translate-y-1/3"></div>
+            <div class="max-w-[1000px] mx-auto relative z-10">
+              <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-brand-border shadow-sm mb-8 reveal">
+                <span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse"></span>
+                <span class="text-xs font-medium text-brand-teal uppercase tracking-wider">Editorial (Roots and Reach)</span>
+              </div>
+              <h1 class="display-xl mb-6 reveal stagger-1">Roots and Reach on Substack</h1>
+              <p class="text-lg text-brand-muted max-w-[740px] leading-relaxed mb-10 reveal stagger-2">
+                Roots and Reach is an editorial platform exploring communication, media, and how work across agriculture and development is understood. Led by Sharon Nkwah, it brings together insights, conversations, and sector visibility: centered on agricultural markets in Africa, how the work actually happens in practice, and making that work clearer and more visible.
+              </p>
+              <div class="flex flex-wrap gap-3 reveal stagger-3">
+                <a href="https://substack.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-brand-teal text-white px-7 py-3.5 rounded-full font-medium hover:bg-brand-teal/90 transition-all shadow-md hover:shadow-lg text-sm">
+                  Visit Substack <i data-lucide="external-link" class="w-4 h-4"></i>
+                </a>
+                <span class="inline-flex items-center gap-2 px-5 py-3.5 rounded-full border border-brand-border bg-white text-brand-muted text-xs font-medium">
+                  <i data-lucide="check-circle" class="w-4 h-4 text-brand-teal"></i> Hosted on Substack
+                </span>
+              </div>
+            </div>
+          </section>
+
+          <!-- EDITORIAL PILLARS -->
+          <section class="py-20 px-6 bg-white border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto">
+              <div class="mb-12 reveal">
+                <h2 class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-3">Editorial</h2>
+              </div>
+              <div class="grid md:grid-cols-3 gap-6 reveal stagger-1">
+
+                <div class="glass-card p-8">
+                  <div class="w-10 h-10 rounded-lg bg-brand-bg flex items-center justify-center border border-brand-border mb-5 text-brand-teal">
+                    <i data-lucide="pen-line" class="w-5 h-5"></i>
+                  </div>
+                  <h3 class="font-serif text-lg text-brand-teal mb-3">Share the work and thinking</h3>
+                  <p class="text-brand-muted text-sm leading-relaxed mb-4">Long-form writing that documents how the work is done, why it matters, and the thinking that shapes it.</p>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-2 text-brand-muted text-sm">
+                      <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0 mt-1.5"></span>
+                      Essays and insight pieces grounded in sector practice.
+                    </li>
+                    <li class="flex items-start gap-2 text-brand-muted text-sm">
+                      <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0 mt-1.5"></span>
+                      Narrative clarity for organizations working across African agricultural markets.
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="glass-card p-8 bg-brand-teal text-white border-none relative overflow-hidden group">
+                  <div class="absolute top-0 right-0 w-48 h-48 bg-brand-yellow/20 rounded-full blur-3xl -z-0 transform group-hover:scale-110 transition-transform duration-700"></div>
+                  <div class="relative z-10">
+                    <div class="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center border border-white/20 mb-5 text-brand-yellow">
+                      <i data-lucide="star" class="w-5 h-5"></i>
+                    </div>
+                    <p class="font-sans text-[10px] font-semibold tracking-widest text-white/60 uppercase mb-3">Features (Paid)</p>
+                    <h3 class="font-serif text-lg mb-3">Feature organizations and operators</h3>
+                    <p class="text-white/70 text-sm leading-relaxed mb-4">Commissioned features that profile teams, programmes, and operators with depth.</p>
+                    <ul class="space-y-2">
+                      <li class="flex items-start gap-2 text-white/70 text-sm">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0 mt-1.5"></span>
+                        Paid features crafted to be credible, not promotional.
+                      </li>
+                      <li class="flex items-start gap-2 text-white/70 text-sm">
+                        <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0 mt-1.5"></span>
+                        Clear documentation of how work happens in practice.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="glass-card p-8">
+                  <div class="w-10 h-10 rounded-lg bg-brand-bg flex items-center justify-center border border-brand-border mb-5 text-brand-teal">
+                    <i data-lucide="bar-chart-2" class="w-5 h-5"></i>
+                  </div>
+                  <p class="font-sans text-[10px] font-semibold tracking-widest text-brand-muted uppercase mb-3">Industry</p>
+                  <h3 class="font-serif text-lg text-brand-teal mb-3">Cover sector developments</h3>
+                  <p class="text-brand-muted text-sm leading-relaxed mb-4">Coverage of relevant industry developments across African agricultural markets.</p>
+                  <ul class="space-y-2">
+                    <li class="flex items-start gap-2 text-brand-muted text-sm">
+                      <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0 mt-1.5"></span>
+                      Signals and analysis that make sector shifts more visible.
+                    </li>
+                    <li class="flex items-start gap-2 text-brand-muted text-sm">
+                      <span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0 mt-1.5"></span>
+                      Links back to work on communication, media, and visibility.
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- FEATURED PIECES -->
+          <section class="py-20 px-6 bg-brand-bg border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto">
+              <div class="mb-12 reveal">
+                <h2 class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-3">Featured Pieces</h2>
+              </div>
+              <div class="grid md:grid-cols-2 gap-8 reveal stagger-1">
+
+                <div class="glass-card p-8 group">
+                  <p class="font-sans text-[10px] font-semibold tracking-widest text-brand-muted uppercase mb-5">Featured Piece · Latest Feature</p>
+                  <h3 class="font-serif text-xl text-brand-teal mb-4 leading-snug group-hover:text-brand-yellow transition-colors">Maki Planet Systems and the Future of Savanna Fire Management in Africa</h3>
+                  <p class="text-brand-muted text-sm leading-relaxed mb-6">A grounded look at fire memory, technology, and resilience in African savanna systems, showcasing how operators and partners are shaping on-the-ground outcomes.</p>
+                  <a href="https://substack.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-medium text-brand-teal hover:text-brand-yellow transition-colors group/link">
+                    Read the feature <i data-lucide="arrow-right" class="w-4 h-4 transform group-[.group\/link]:translate-x-1 transition-transform"></i>
+                  </a>
+                </div>
+
+                <div class="glass-card p-8 group">
+                  <p class="font-sans text-[10px] font-semibold tracking-widest text-brand-muted uppercase mb-5">Featured Piece</p>
+                  <h3 class="font-serif text-xl text-brand-teal mb-4 leading-snug group-hover:text-brand-yellow transition-colors">Visibility Is Not the Goal.</h3>
+                  <p class="text-brand-muted text-sm leading-relaxed mb-6">Visibility is not the goal. Clarity is what turns visibility into authority.</p>
+                  <a href="https://substack.com" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-sm font-medium text-brand-teal hover:text-brand-yellow transition-colors group/link">
+                    Read the piece <i data-lucide="arrow-right" class="w-4 h-4 transform group-[.group\/link]:translate-x-1 transition-transform"></i>
+                  </a>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+          <!-- PAID FEATURE PLACEMENTS -->
+          <section class="py-20 px-6 bg-white border-t border-brand-border">
+            <div class="max-w-[1000px] mx-auto reveal">
+              <div class="glass-card p-10 md:p-14 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-brand-yellow/10 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="relative z-10">
+                  <p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-3">Paid Feature Placements</p>
+                  <h2 class="font-serif text-3xl text-brand-teal mb-4 max-w-[600px]">Organizations and operators can apply to be featured in Roots and Reach.</h2>
+                  <p class="text-brand-muted mb-4 max-w-xl">Features are paid. Reach out to discuss placement.</p>
+                  <p class="text-brand-muted text-sm mb-8 max-w-xl">Shared guest pathways and series strengthen visibility across audio and written formats. Clear routes for organizations to move between dialogue, features, and industry coverage.</p>
+                  <a href="/contact" onclick="handleNav(event, '/contact')" class="inline-flex items-center gap-2 bg-brand-teal text-white px-8 py-4 rounded-full font-medium hover:bg-brand-teal/90 transition-all shadow-md hover:shadow-lg">
+                    Get in touch <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- EDITORIAL CTA -->
+          <section class="py-24 px-6 bg-brand-bg border-t border-brand-border text-center">
+            <div class="max-w-[700px] mx-auto reveal">
+              <h2 class="display-lg mb-6">Ready to clarify your narrative?</h2>
+              <p class="text-lg text-brand-muted mb-10">We help organizations communicate their work in a way that is clear, credible, and easy to understand.</p>
+              <a href="/contact" onclick="handleNav(event, '/contact')" class="inline-flex items-center gap-2 bg-brand-teal text-white px-8 py-4 rounded-full font-medium hover:bg-brand-teal/90 transition-all shadow-md hover:shadow-lg">
+                Start a conversation <i data-lucide="arrow-right" class="w-4 h-4"></i>
+              </a>
+            </div>
+          </section>
+        `;
+      }
+
+      function renderContact() {
+        app.innerHTML = `
+          <section class="pt-40 pb-24 px-6 max-w-[1200px] mx-auto relative">
+             <div class="grid md:grid-cols-2 gap-16">
+                <div class="reveal">
+                   <h1 class="display-xl mb-6">Let's Talk.</h1>
+                   <p class="text-xl text-brand-muted leading-relaxed mb-12">
+                     Ready to explore how our strategic communication and intelligence tools can elevate your organization? Send us a message.
+                   </p>
+                   
+                   <div class="space-y-6">
+                     <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-bg flex items-center justify-center border border-brand-border text-brand-teal shrink-0 mt-1">
+                           <i data-lucide="mail" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                           <h4 class="font-medium text-brand-text mb-1">Email</h4>
+                           <a href="mailto:hello@letstalkagriculture.com" class="text-brand-muted hover:text-brand-teal transition-colors">hello@letstalkagriculture.com</a>
+                        </div>
+                     </div>
+                     <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-brand-bg flex items-center justify-center border border-brand-border text-brand-teal shrink-0 mt-1">
+                           <i data-lucide="map-pin" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                           <h4 class="font-medium text-brand-text mb-1">Location</h4>
+                           <p class="text-brand-muted">Lagos, Nigeria</p>
+                        </div>
+                     </div>
+                   </div>
+                </div>
+
+                <div class="reveal stagger-1">
+                   <div class="glass-card p-8 md:p-10">
+                      <form id="contact-form" class="space-y-6">
+                         <div>
+                            <label for="name" class="block text-sm font-medium text-brand-text mb-2">Full Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-brand-border bg-brand-bg focus:bg-white focus:ring-2 focus:ring-brand-teal/20 focus:border-brand-teal transition-colors outline-none" placeholder="Jane Doe">
+                         </div>
+                         <div>
+                            <label for="email" class="block text-sm font-medium text-brand-text mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-brand-border bg-brand-bg focus:bg-white focus:ring-2 focus:ring-brand-teal/20 focus:border-brand-teal transition-colors outline-none" placeholder="jane@organization.com">
+                         </div>
+                         <div>
+                            <label for="message" class="block text-sm font-medium text-brand-text mb-2">How can we help?</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-brand-border bg-brand-bg focus:bg-white focus:ring-2 focus:ring-brand-teal/20 focus:border-brand-teal transition-colors outline-none resize-none" placeholder="Tell us about your goals..."></textarea>
+                         </div>
+                         <button type="submit" class="w-full bg-brand-teal text-white px-8 py-4 rounded-lg font-medium hover:bg-brand-teal/90 transition-colors shadow-sm flex justify-center items-center gap-2">
+                           Send Message <i data-lucide="send" class="w-4 h-4"></i>
+                         </button>
+                      </form>
+                   </div>
+                </div>
+             </div>
+          </section>
+        `;
+        
+        const form = document.getElementById('contact-form');
+        if (form) {
+          form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const originalText = btn.innerHTML;
+            btn.disabled = true;
+            btn.innerHTML = 'Sending... <i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i>';
+            if(window.lucide) lucide.createIcons();
+
+            try {
+              if (typeof submitContactForm === 'function') {
+                await submitContactForm(e.target);
+              } else {
+                await new Promise(resolve => setTimeout(resolve, 1500));
+              }
+              e.target.reset();
+              btn.innerHTML = 'Sent Successfully <i data-lucide="check" class="w-4 h-4"></i>';
+            } catch (err) {
+              btn.innerHTML = 'Error Sending <i data-lucide="x" class="w-4 h-4"></i>';
+            }
+            if(window.lucide) lucide.createIcons();
+
+            setTimeout(() => {
+              btn.disabled = false;
+              btn.innerHTML = originalText;
+              if(window.lucide) lucide.createIcons();
+            }, 3000);
+          });
+        }
+      }
+
+      function buildCaseCard(geo, client, title, problem, highlights, result, delay) {
+        var highlightItems = highlights.map(function(h) {
+          return '<li class="flex items-start gap-3 text-brand-muted text-sm"><span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0 mt-1.5"></span>' + h + '</li>';
+        }).join('');
+        return '<div class="glass-card p-8 md:p-10 reveal" style="transition-delay:' + delay + 'ms">'
+          + '<div class="flex flex-wrap items-center gap-3 mb-5">'
+          + '<span class="font-sans text-[10px] font-semibold tracking-widest text-brand-muted uppercase px-3 py-1 rounded-full border border-brand-border bg-brand-bg">' + geo + '</span>'
+          + '<span class="font-sans text-[10px] font-semibold tracking-widest text-brand-teal uppercase">Client: ' + client + '</span>'
+          + '</div>'
+          + '<h2 class="font-serif text-2xl text-brand-teal mb-4 leading-snug">' + title + '</h2>'
+          + '<p class="text-brand-muted leading-relaxed mb-8">' + problem + '</p>'
+          + '<div class="grid md:grid-cols-2 gap-8">'
+          + '<div><p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-4">Highlights</p>'
+          + '<ul class="space-y-3">' + highlightItems + '</ul></div>'
+          + '<div class="glass-card p-6 bg-brand-bg border-brand-border flex flex-col justify-between">'
+          + '<p class="font-sans text-xs font-semibold tracking-widest text-brand-muted uppercase mb-3">Result</p>'
+          + '<p class="text-brand-text leading-relaxed text-sm">' + result + '</p>'
+          + '</div></div></div>';
+      }
+
+      function renderCaseStudies() {
+        var cards = ''
+          + buildCaseCard('Global', 'Emeraid Group', 'Narrative Positioning &amp; Communication Strategy',
+              'Multiple subsidiaries across advisory, enterprise support, finance, and asset-backed solutions looked like separate entities. The value felt fragmented externally and the organisation needed a unified communication system.',
+              ['Reframed Emeraid as a connected system where advisory, capacity, finance, and execution operate together',
+               'Built a narrative and positioning framework with a structured messaging system covering core, supporting, and proof points',
+               'Developed communication structure for tone, clarity, and consistency across subsidiaries',
+               'Activated the foundation with a communication strategy and platform-by-platform visibility roadmap',
+               'Supported leadership positioning through a retainer to keep the system applied'],
+              'Emeraid is now communicated as one coordinated system. Messaging across subsidiaries is clearer and the value to partners is easier to grasp.', 0)
+          + buildCaseCard('Nigeria / Global', 'MEDA', 'Programme Communications &amp; Executive Visibility',
+              'MEDA needed stronger communication alignment between programme visibility in Nigeria and broader leadership visibility across the organisation.',
+              ['Shaped communication around key programme milestones and close-out moments',
+               'Supported stakeholder-facing storytelling tied to programme activity in Nigeria',
+               'Strengthened executive visibility through thought leadership support',
+               "Helped align field-level communication with MEDA's wider institutional voice"],
+              "MEDA's programme communication became more structured and cohesive, while leadership visibility felt more connected to the realities of the work, helping reinforce institutional credibility.", 50)
+          + buildCaseCard('Global', 'FoodChain ID', 'Executive Narrative &amp; Industry Communications',
+              'FoodChain ID needed a clearer way to translate technical expertise into communication that industry audiences could follow, while strengthening executive visibility across markets.',
+              ['Developed executive narrative direction for industry-facing communication',
+               'Supported thought leadership positioning for stronger external visibility',
+               'Produced a podcast mini-series aligned with industry conversations',
+               'Helped turn technical subject matter into clearer, more accessible messaging'],
+              'FoodChain ID strengthened executive positioning and improved clarity around its role within global food safety and quality systems, reinforcing credibility with industry audiences.', 100)
+          + buildCaseCard('Global', 'Opportunity International', 'Leadership Communications &amp; Donor Narrative',
+              'Opportunity International needed more structured leadership communication across agriculture and financial inclusion work so donor-facing narratives stayed clear and aligned.',
+              ['Supported executive narrative framing for leadership communication',
+               'Strengthened stakeholder-facing storytelling around programme insight',
+               'Produced podcast-led leadership visibility content',
+               'Helped align messaging more closely with institutional priorities'],
+              'Opportunity International improved leadership clarity and donor-facing storytelling, creating stronger coherence across channels and reinforcing institutional authority.', 150)
+          + buildCaseCard('Nigeria', 'IFDC (HortiNigeria)', 'Programme Communications &amp; Stakeholder Visibility',
+              'HortiNigeria needed communications that moved beyond activity reporting and made programme progress, purpose, and relevance easier for stakeholders to understand.',
+              ['Developed clearer programme narrative direction',
+               'Supported strategic content for milestone and stakeholder communication',
+               'Strengthened thought leadership and visibility around programme work',
+               'Helped shape communication that was more structured, context-aware, and credible'],
+              "HortiNigeria's communication became more insight-driven and easier for stakeholders to follow, helping reinforce programme credibility.", 200)
+          + buildCaseCard('Pan-Africa / Global', 'Yiieldy', 'Strategic Communications &amp; Visibility Support',
+              'Yiieldy needed a clearer communications approach to position its innovation credibly across technical, commercial, and sector-facing audiences.',
+              ['Shaped narrative direction for multi-audience communication',
+               'Supported founder and executive visibility',
+               'Strengthened communication around product value and sector relevance',
+               'Used media and content strategy to improve clarity across platforms'],
+              'Yiieldy gained stronger visibility, clearer value articulation, and more credible positioning with partners and broader sector audiences.', 250)
+          + buildCaseCard('Nigeria / Digital Marketplace', 'Agro Market Square', 'Visibility Strategy &amp; Narrative Amplification',
+              'Agro Market Square needed a stronger narrative to explain its marketplace value in sector terms and build clearer recognition with farmers, buyers, and ecosystem stakeholders.',
+              ["Clarified the platform's positioning around trust, technology, and market access",
+               'Strengthened communication planning for different stakeholder groups',
+               'Developed content that explained value for farmers and buyers more clearly',
+               'Supported visibility through media and sector-facing storytelling'],
+              'Agro Market Square communicated its value proposition with greater clarity, helping strengthen stakeholder understanding and reinforce its reputation as a trusted marketplace solution.', 300);
+
+        app.innerHTML = ''
+          + '<section class="relative pt-32 pb-20 md:pt-44 md:pb-28 px-6 overflow-hidden">'
+          + '<div class="absolute inset-0 z-0 opacity-[0.03]" style="background-image: linear-gradient(#1B4D4D 1px, transparent 1px), linear-gradient(90deg, #1B4D4D 1px, transparent 1px); background-size: 40px 40px;"></div>'
+          + '<div class="absolute top-0 right-0 w-[40vw] h-[40vw] bg-brand-yellow/5 rounded-full blur-[100px] -z-10 translate-x-1/3 -translate-y-1/3"></div>'
+          + '<div class="max-w-[1000px] mx-auto relative z-10">'
+          + '<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white border border-brand-border shadow-sm mb-8 reveal">'
+          + '<span class="w-2 h-2 rounded-full bg-brand-yellow animate-pulse"></span>'
+          + '<span class="text-xs font-medium text-brand-teal uppercase tracking-wider">Case Studies</span></div>'
+          + '<h1 class="display-xl mb-6 reveal stagger-1">Selected Engagements</h1>'
+          + '<p class="text-xl text-brand-muted max-w-[700px] leading-relaxed reveal stagger-2">Strategic communications, narrative development, and stakeholder engagement across agriculture, sustainability, development, and market systems.</p>'
+          + '</div></section>'
+          + '<section class="py-20 px-6 bg-white border-t border-brand-border">'
+          + '<div class="max-w-[1000px] mx-auto space-y-8">' + cards + '</div>'
+          + '</section>'
+          + '<section class="py-24 px-6 bg-brand-bg border-t border-brand-border text-center">'
+          + '<div class="max-w-[700px] mx-auto reveal">'
+          + '<h2 class="display-lg mb-6">Ready to create your success story?</h2>'
+          + '<a href="/contact" onclick="handleNav(event, \'/contact\')" class="inline-flex items-center gap-2 bg-brand-teal text-white px-8 py-4 rounded-full font-medium hover:bg-brand-teal/90 transition-all shadow-md hover:shadow-lg">'
+          + 'Get in touch <i data-lucide="arrow-right" class="w-4 h-4"></i></a>'
+          + '</div></section>';
+      }
+
+      function renderSentraDashboard() {
+        // Dashboard uses string concat to avoid nested template literal build errors
+        var themes = [
+          { label: 'Delivery &amp; logistics issues', pct: 82, color: 'bg-brand-teal' },
+          { label: 'Input pricing concerns', pct: 71, color: 'bg-brand-teal' },
+          { label: 'Product performance &amp; quality', pct: 64, color: 'bg-brand-teal/70' },
+          { label: 'Training &amp; extension confusion', pct: 53, color: 'bg-brand-teal/60' },
+          { label: 'Customer trust &amp; relationship', pct: 47, color: 'bg-brand-yellow' },
+          { label: 'Adoption barriers &amp; uptake', pct: 39, color: 'bg-brand-yellow/70' },
+          { label: 'Payment &amp; credit access', pct: 31, color: 'bg-gray-300' }
+        ];
+        var themeRows = themes.map(function(t) {
+          return '<div class="flex items-center gap-4">'
+            + '<div class="w-48 md:w-64 text-sm text-brand-text flex-shrink-0">' + t.label + '</div>'
+            + '<div class="flex-1 h-2 bg-gray-100 rounded-full overflow-hidden">'
+            + '<div class="h-full ' + t.color + ' rounded-full" style="width:' + t.pct + '%"></div></div>'
+            + '<div class="w-10 text-right text-xs text-brand-muted font-medium">' + t.pct + '%</div>'
+            + '</div>';
+        }).join('');
+
+        var quotes = [
+          { text: 'The fertiliser arrived two weeks after planting season. By then it was too late for most farmers in our zone.', source: 'Field report', channel: 'WhatsApp', region: 'Kano, Nigeria', sentiment: 'negative' },
+          { text: 'I appreciate the agro-dealer trainings but the materials are only in English. Most of our farmers need Hausa.', source: 'Survey response', channel: 'Survey', region: 'Kaduna, Nigeria', sentiment: 'neutral' },
+          { text: 'Since we started using the cooperative buying scheme, input costs have dropped significantly. Very helpful.', source: 'Farmer feedback', channel: 'Support channel', region: 'Nakuru, Kenya', sentiment: 'positive' },
+          { text: 'The loan repayment window does not align with the harvest cycle. We need more flexibility.', source: 'Customer complaint', channel: 'WhatsApp', region: 'Ogun, Nigeria', sentiment: 'negative' }
+        ];
+        var quoteCards = quotes.map(function(q) {
+          var sentColor = q.sentiment === 'positive' ? 'text-green-600 bg-green-50 border-green-100' : q.sentiment === 'negative' ? 'text-red-500 bg-red-50 border-red-100' : 'text-brand-muted bg-gray-50 border-gray-100';
+          var sentLabel = q.sentiment.charAt(0).toUpperCase() + q.sentiment.slice(1);
+          return '<div class="bg-white border border-brand-border rounded-xl p-6 flex flex-col gap-3">'
+            + '<div class="flex items-center justify-between gap-4">'
+            + '<span class="text-xs font-semibold uppercase tracking-wider text-brand-muted">' + q.source + ' &middot; ' + q.channel + '</span>'
+            + '<span class="text-[10px] font-semibold uppercase tracking-wider px-2 py-0.5 rounded-full border ' + sentColor + '">' + sentLabel + '</span>'
+            + '</div>'
+            + '<p class="font-serif text-brand-text text-sm leading-relaxed">&ldquo;' + q.text + '&rdquo;</p>'
+            + '<p class="text-xs text-brand-muted">' + q.region + '</p>'
+            + '</div>';
+        }).join('');
+
+        var conversations = [
+          { id: 'C-1041', source: 'WhatsApp', region: 'Kano, NG', topic: 'Delivery delay complaint', sentiment: 'neg', date: 'Today, 09:14' },
+          { id: 'C-1040', source: 'Survey', region: 'Nakuru, KE', topic: 'Positive cooperative feedback', sentiment: 'pos', date: 'Today, 08:52' },
+          { id: 'C-1039', source: 'Field report', region: 'Ogun, NG', topic: 'Loan repayment timing issue', sentiment: 'neg', date: 'Yesterday, 17:31' },
+          { id: 'C-1038', source: 'Support', region: 'Kaduna, NG', topic: 'Training language barrier', sentiment: 'neu', date: 'Yesterday, 14:07' },
+          { id: 'C-1037', source: 'WhatsApp', region: 'Kampala, UG', topic: 'Product quality concern', sentiment: 'neg', date: 'Yesterday, 11:22' },
+          { id: 'C-1036', source: 'Survey', region: 'Accra, GH', topic: 'Input access improvement', sentiment: 'pos', date: '2 days ago' }
+        ];
+        var convRows = conversations.map(function(c) {
+          var sentDot = c.sentiment === 'pos' ? 'bg-green-400' : c.sentiment === 'neg' ? 'bg-red-400' : 'bg-gray-300';
+          var sentText = c.sentiment === 'pos' ? 'Positive' : c.sentiment === 'neg' ? 'Negative' : 'Neutral';
+          return '<tr class="border-b border-brand-border hover:bg-brand-bg/50 transition-colors">'
+            + '<td class="py-3 px-4 text-xs text-brand-muted font-mono">' + c.id + '</td>'
+            + '<td class="py-3 px-4"><span class="text-xs font-medium text-brand-teal bg-brand-teal/5 border border-brand-teal/10 px-2 py-0.5 rounded-full">' + c.source + '</span></td>'
+            + '<td class="py-3 px-4 text-sm text-brand-text">' + c.topic + '</td>'
+            + '<td class="py-3 px-4 text-xs text-brand-muted hidden md:table-cell">' + c.region + '</td>'
+            + '<td class="py-3 px-4"><span class="flex items-center gap-1.5 text-xs text-brand-muted"><span class="w-2 h-2 rounded-full ' + sentDot + ' flex-shrink-0"></span>' + sentText + '</span></td>'
+            + '<td class="py-3 px-4 text-xs text-brand-muted hidden md:table-cell">' + c.date + '</td>'
+            + '</tr>';
+        }).join('');
+
+        app.innerHTML = ''
+          // ── App Shell ──────────────────────────────────────────────
+          + '<div class="min-h-screen bg-[#F4F6F8] flex flex-col">'
+
+          // ── App Top Bar ────────────────────────────────────────────
+          + '<header class="fixed top-0 left-0 right-0 z-50 h-14 bg-[#0B1A1A] flex items-center justify-between px-4 md:px-6 border-b border-white/10">'
+          + '<div class="flex items-center gap-4">'
+          + '<a href="/product" onclick="handleNav(event,\'/product\')" class="flex items-center gap-2 text-white/70 hover:text-white transition-colors text-xs">'
+          + '<i data-lucide="arrow-left" class="w-3.5 h-3.5"></i> Back to Sentra</a>'
+          + '<div class="w-px h-4 bg-white/20"></div>'
+          + '<div class="flex items-center gap-2">'
+          + '<div class="w-6 h-6 rounded bg-brand-yellow flex items-center justify-center"><i data-lucide="cpu" class="w-3.5 h-3.5 text-brand-teal"></i></div>'
+          + '<span class="text-white font-semibold text-sm tracking-tight">Sentra</span>'
+          + '<span class="text-[10px] font-medium text-brand-yellow/80 uppercase tracking-wider ml-1 hidden md:inline">Insights</span>'
+          + '</div></div>'
+          + '<div class="flex items-center gap-3">'
+          + '<span class="text-[10px] font-semibold uppercase tracking-wider text-brand-yellow/80 bg-brand-yellow/10 border border-brand-yellow/20 px-2 py-1 rounded-full hidden md:inline">Dashboard Preview</span>'
+          + '<div class="w-7 h-7 rounded-full bg-brand-teal flex items-center justify-center text-white text-xs font-semibold">SN</div>'
+          + '</div></header>'
+
+          // ── Main layout ────────────────────────────────────────────
+          + '<div class="flex pt-14 min-h-screen">'
+
+          // ── Sidebar ────────────────────────────────────────────────
+          + '<aside class="hidden md:flex flex-col w-56 bg-white border-r border-brand-border fixed top-14 bottom-0 left-0 z-40">'
+          + '<div class="p-4 border-b border-brand-border">'
+          + '<div class="text-xs font-semibold text-brand-muted uppercase tracking-widest mb-1">Workspace</div>'
+          + '<div class="text-sm font-medium text-brand-text">HortiNigeria Programme</div>'
+          + '</div>'
+          + '<nav class="flex-1 p-3 space-y-0.5">'
+          + '<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-brand-teal/10 text-brand-teal text-sm font-medium"><i data-lucide="layout-dashboard" class="w-4 h-4 flex-shrink-0"></i>Overview</a>'
+          + '<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-brand-muted hover:bg-brand-bg hover:text-brand-text text-sm transition-colors cursor-pointer"><i data-lucide="activity" class="w-4 h-4 flex-shrink-0"></i>Sentiment</a>'
+          + '<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-brand-muted hover:bg-brand-bg hover:text-brand-text text-sm transition-colors cursor-pointer"><i data-lucide="layers" class="w-4 h-4 flex-shrink-0"></i>Themes</a>'
+          + '<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-brand-muted hover:bg-brand-bg hover:text-brand-text text-sm transition-colors cursor-pointer"><i data-lucide="quote" class="w-4 h-4 flex-shrink-0"></i>Quotes</a>'
+          + '<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-brand-muted hover:bg-brand-bg hover:text-brand-text text-sm transition-colors cursor-pointer"><i data-lucide="git-compare" class="w-4 h-4 flex-shrink-0"></i>Messaging Gaps</a>'
+          + '<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-brand-muted hover:bg-brand-bg hover:text-brand-text text-sm transition-colors cursor-pointer"><i data-lucide="send" class="w-4 h-4 flex-shrink-0"></i>Outbound</a>'
+          + '</nav>'
+          + '<div class="p-4 border-t border-brand-border">'
+          + '<div class="text-[10px] text-brand-muted uppercase tracking-wider mb-2">Data sources</div>'
+          + '<div class="flex flex-wrap gap-1">'
+          + '<span class="text-[10px] px-2 py-0.5 bg-brand-bg border border-brand-border rounded-full text-brand-muted">WhatsApp</span>'
+          + '<span class="text-[10px] px-2 py-0.5 bg-brand-bg border border-brand-border rounded-full text-brand-muted">Surveys</span>'
+          + '<span class="text-[10px] px-2 py-0.5 bg-brand-bg border border-brand-border rounded-full text-brand-muted">Field reports</span>'
+          + '</div></div></aside>'
+
+          // ── Main content ───────────────────────────────────────────
+          + '<main class="flex-1 md:ml-56 p-4 md:p-6 overflow-x-hidden">'
+
+          // Page header
+          + '<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">'
+          + '<div>'
+          + '<h1 class="text-lg font-semibold text-brand-text">Intelligence Overview</h1>'
+          + '<p class="text-sm text-brand-muted">1 Apr 2025 &ndash; 30 Apr 2025 &middot; All channels &middot; Nigeria &amp; East Africa</p>'
+          + '</div>'
+          + '<div class="flex items-center gap-2 flex-wrap">'
+          + '<select class="text-sm border border-brand-border bg-white rounded-lg px-3 py-1.5 text-brand-text focus:outline-none focus:ring-1 focus:ring-brand-teal/30"><option>April 2025</option><option>March 2025</option><option>Q1 2025</option></select>'
+          + '<select class="text-sm border border-brand-border bg-white rounded-lg px-3 py-1.5 text-brand-text focus:outline-none focus:ring-1 focus:ring-brand-teal/30"><option>All regions</option><option>Nigeria</option><option>Kenya</option><option>Uganda</option></select>'
+          + '<select class="text-sm border border-brand-border bg-white rounded-lg px-3 py-1.5 text-brand-text focus:outline-none focus:ring-1 focus:ring-brand-teal/30"><option>All channels</option><option>WhatsApp</option><option>Survey</option><option>Field report</option></select>'
+          + '</div></div>'
+
+          // ── Overview cards ─────────────────────────────────────────
+          + '<div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">'
+          + '<div class="bg-white border border-brand-border rounded-xl p-5 flex flex-col gap-1">'
+          + '<p class="text-[10px] font-semibold uppercase tracking-wider text-brand-muted">Conversations analyzed</p>'
+          + '<p class="text-2xl font-semibold text-brand-text">1,284</p>'
+          + '<p class="text-xs text-green-600">+18% vs last month</p>'
+          + '</div>'
+          + '<div class="bg-white border border-brand-border rounded-xl p-5 flex flex-col gap-1">'
+          + '<p class="text-[10px] font-semibold uppercase tracking-wider text-brand-muted">Avg. sentiment score</p>'
+          + '<p class="text-2xl font-semibold text-red-500">42 <span class="text-base font-normal text-brand-muted">/ 100</span></p>'
+          + '<p class="text-xs text-red-400">Mostly negative this period</p>'
+          + '</div>'
+          + '<div class="bg-white border border-brand-border rounded-xl p-5 flex flex-col gap-1">'
+          + '<p class="text-[10px] font-semibold uppercase tracking-wider text-brand-muted">Top recurring theme</p>'
+          + '<p class="text-sm font-semibold text-brand-text leading-snug mt-1">Delivery &amp; logistics issues</p>'
+          + '<p class="text-xs text-brand-muted">82% occurrence rate</p>'
+          + '</div>'
+          + '<div class="bg-white border border-brand-border rounded-xl p-5 flex flex-col gap-1">'
+          + '<p class="text-[10px] font-semibold uppercase tracking-wider text-brand-muted">Regions tracked</p>'
+          + '<p class="text-2xl font-semibold text-brand-text">7</p>'
+          + '<p class="text-xs text-brand-muted">Nigeria, Kenya, Uganda, Ghana</p>'
+          + '</div>'
+          + '</div>'
+
+          // ── Sentiment + Themes row ─────────────────────────────────
+          + '<div class="grid md:grid-cols-2 gap-4 mb-6">'
+
+          // Sentiment card
+          + '<div class="bg-white border border-brand-border rounded-xl p-6">'
+          + '<div class="flex items-center justify-between mb-5">'
+          + '<p class="text-sm font-semibold text-brand-text">Sentiment distribution</p>'
+          + '<span class="text-[10px] text-brand-muted">1,284 conversations</span>'
+          + '</div>'
+          + '<div class="flex items-end gap-2 h-32 mb-4">'
+          + '<div class="flex flex-col items-center gap-1 flex-1"><div class="w-full bg-red-400 rounded-t-md" style="height:68%"></div><span class="text-[10px] text-brand-muted">Negative</span><span class="text-xs font-semibold text-brand-text">52%</span></div>'
+          + '<div class="flex flex-col items-center gap-1 flex-1"><div class="w-full bg-gray-200 rounded-t-md" style="height:34%"></div><span class="text-[10px] text-brand-muted">Neutral</span><span class="text-xs font-semibold text-brand-text">26%</span></div>'
+          + '<div class="flex flex-col items-center gap-1 flex-1"><div class="w-full bg-green-400 rounded-t-md" style="height:28%"></div><span class="text-[10px] text-brand-muted">Positive</span><span class="text-xs font-semibold text-brand-text">22%</span></div>'
+          + '</div>'
+          + '<div class="h-2 w-full rounded-full overflow-hidden flex">'
+          + '<div class="bg-red-400" style="width:52%"></div>'
+          + '<div class="bg-gray-200" style="width:26%"></div>'
+          + '<div class="bg-green-400" style="width:22%"></div>'
+          + '</div>'
+          + '<p class="text-xs text-brand-muted mt-3">High negative volume primarily driven by delivery delays and pricing concerns in northern Nigeria.</p>'
+          + '</div>'
+
+          // Themes card
+          + '<div class="bg-white border border-brand-border rounded-xl p-6">'
+          + '<div class="flex items-center justify-between mb-5">'
+          + '<p class="text-sm font-semibold text-brand-text">Top themes</p>'
+          + '<span class="text-[10px] text-brand-muted">by occurrence</span>'
+          + '</div>'
+          + '<div class="space-y-3">' + themeRows + '</div>'
+          + '</div>'
+          + '</div>'
+
+          // ── Quotes ─────────────────────────────────────────────────
+          + '<div class="mb-6">'
+          + '<div class="flex items-center justify-between mb-4">'
+          + '<p class="text-sm font-semibold text-brand-text">Extracted quotes</p>'
+          + '<span class="text-[10px] text-brand-muted uppercase tracking-wider">AI-extracted &middot; verbatim</span>'
+          + '</div>'
+          + '<div class="grid md:grid-cols-2 gap-4">' + quoteCards + '</div>'
+          + '</div>'
+
+          // ── Messaging gap ──────────────────────────────────────────
+          + '<div class="mb-6 bg-white border border-brand-border rounded-xl p-6">'
+          + '<p class="text-sm font-semibold text-brand-text mb-1">Messaging gap analysis</p>'
+          + '<p class="text-xs text-brand-muted mb-5">Intended messaging vs. what customers and field actors are actually experiencing</p>'
+          + '<div class="grid md:grid-cols-2 gap-6">'
+          + '<div>'
+          + '<p class="text-[10px] font-semibold uppercase tracking-wider text-brand-muted mb-3">What the organisation communicates</p>'
+          + '<ul class="space-y-3">'
+          + '<li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-brand-teal flex-shrink-0 mt-1.5"></span><span class="text-sm text-brand-text">Inputs delivered within 5 days of order confirmation</span></li>'
+          + '<li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-brand-teal flex-shrink-0 mt-1.5"></span><span class="text-sm text-brand-text">Training materials available in local languages</span></li>'
+          + '<li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-brand-teal flex-shrink-0 mt-1.5"></span><span class="text-sm text-brand-text">Flexible loan repayment aligned to harvest cycles</span></li>'
+          + '</ul></div>'
+          + '<div>'
+          + '<p class="text-[10px] font-semibold uppercase tracking-wider text-brand-muted mb-3">What customers and field actors report</p>'
+          + '<ul class="space-y-3">'
+          + '<li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-red-400 flex-shrink-0 mt-1.5"></span><span class="text-sm text-brand-text">Deliveries regularly arrive 2&ndash;3 weeks late, missing planting windows</span></li>'
+          + '<li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-red-400 flex-shrink-0 mt-1.5"></span><span class="text-sm text-brand-text">Materials only available in English; farmers in northern regions cannot use them</span></li>'
+          + '<li class="flex items-start gap-3"><span class="w-1.5 h-1.5 rounded-full bg-brand-yellow flex-shrink-0 mt-1.5"></span><span class="text-sm text-brand-text">Repayment schedule does not match harvest timing in most zones</span></li>'
+          + '</ul></div>'
+          + '</div>'
+          + '<div class="mt-5 pt-5 border-t border-brand-border flex items-center gap-3">'
+          + '<div class="w-8 h-8 rounded-lg bg-brand-yellow/10 flex items-center justify-center border border-brand-yellow/20 flex-shrink-0"><i data-lucide="alert-triangle" class="w-4 h-4 text-brand-yellow"></i></div>'
+          + '<p class="text-xs text-brand-muted">3 significant messaging gaps detected this period. Recommend updating field communication protocol and delivery SLA language.</p>'
+          + '</div></div>'
+
+          // ── Recent conversations ───────────────────────────────────
+          + '<div class="bg-white border border-brand-border rounded-xl overflow-hidden mb-6">'
+          + '<div class="flex items-center justify-between px-5 py-4 border-b border-brand-border">'
+          + '<p class="text-sm font-semibold text-brand-text">Recent conversations</p>'
+          + '<span class="text-[10px] text-brand-muted uppercase tracking-wider">Last 48 hours &middot; 1,284 total</span>'
+          + '</div>'
+          + '<div class="overflow-x-auto">'
+          + '<table class="w-full text-sm">'
+          + '<thead class="bg-brand-bg border-b border-brand-border">'
+          + '<tr>'
+          + '<th class="text-left py-2 px-4 text-[10px] font-semibold uppercase tracking-wider text-brand-muted">ID</th>'
+          + '<th class="text-left py-2 px-4 text-[10px] font-semibold uppercase tracking-wider text-brand-muted">Source</th>'
+          + '<th class="text-left py-2 px-4 text-[10px] font-semibold uppercase tracking-wider text-brand-muted">Topic</th>'
+          + '<th class="text-left py-2 px-4 text-[10px] font-semibold uppercase tracking-wider text-brand-muted hidden md:table-cell">Region</th>'
+          + '<th class="text-left py-2 px-4 text-[10px] font-semibold uppercase tracking-wider text-brand-muted">Sentiment</th>'
+          + '<th class="text-left py-2 px-4 text-[10px] font-semibold uppercase tracking-wider text-brand-muted hidden md:table-cell">Time</th>'
+          + '</tr></thead>'
+          + '<tbody>' + convRows + '</tbody>'
+          + '</table></div></div>'
+
+          // ── Footer ─────────────────────────────────────────────────
+          + '<div class="flex items-center justify-between py-4 border-t border-brand-border">'
+          + '<p class="text-xs text-brand-muted">Sentra Insights &middot; Dashboard Preview &middot; Let\'s Talk Agriculture</p>'
+          + '<a href="/contact" onclick="handleNav(event,\'/contact\')" class="inline-flex items-center gap-2 text-xs font-medium text-brand-teal hover:text-brand-yellow transition-colors">'
+          + 'Talk to sales <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i></a>'
+          + '</div>'
+
+          + '</main></div></div>';
+      }
+
+      // ─── INIT ─────────────────────────────────────────────────
+      render(location.pathname);
+    </script>
+  <script>(function(){document.addEventListener("error",function(e){var img=e.target;if(!img||img.tagName!=="IMG")return;var w=img.width||img.offsetWidth||300;var h=img.height||img.offsetHeight||200;img.src="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27"+w+"%27 height=%27"+h+"%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%23e5e7eb%27/%3E%3C/svg%3E";img.alt="";},true)})()</script>
+    <script src="https://assets.appsmith.com/kite_script_injector_v020.js"></script>
+  </body>
+</html>
