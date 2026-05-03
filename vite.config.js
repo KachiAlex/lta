@@ -1,8 +1,3 @@
-import {
-  defineKiteConfig,
-  kiteBadgeInjector,
-} from '@appsmithorg/template-frontend/vite';
+import { defineConfig } from 'vite';
 
-export default defineKiteConfig(({ env }) => ({
-  plugins: [kiteBadgeInjector({ disabled: true, appId: env.VITE_APP_ID })],
-}));
+export default defineConfig({});

@@ -3,10 +3,10 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "kite-client",
-    "build": "kite-client build"
+    "dev": "vite",
+    "build": "vite build"
   },
-  "dependencies": {
-    "@appsmithorg/template-frontend": "^1.1.0"
+  "devDependencies": {
+    "vite": "^5.4.10"
   }
 }

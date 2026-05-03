@@ -313,19 +313,8 @@
     "company": "content/company.json"
 }</script>
 
-    <script type="module">
-import { submitContactForm } from '@appsmithorg/template-frontend/utility';
-document.dispatchEvent(new CustomEvent('kite:core-ready', {
-  detail: { submitContactForm }
-}));
-</script>
-
-<script id="main_script">
-// Receive async-loaded core utilities via CustomEvent (non-blocking)
+    <script id="main_script">
 let submitContactForm = null;
-document.addEventListener('kite:core-ready', (e) => {
-  submitContactForm = e.detail.submitContactForm;
-});
 const data = JSON.parse(document.getElementById('content').textContent);
       const app = document.getElementById('app');
       document.getElementById('year').textContent = new Date().getFullYear();
@@ -2217,6 +2206,5 @@ const data = JSON.parse(document.getElementById('content').textContent);
       render(location.pathname);
     </script>
   <script>(function(){document.addEventListener("error",function(e){var img=e.target;if(!img||img.tagName!=="IMG")return;var w=img.width||img.offsetWidth||300;var h=img.height||img.offsetHeight||200;img.src="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%27"+w+"%27 height=%27"+h+"%27%3E%3Crect width=%27100%25%27 height=%27100%25%27 fill=%27%23e5e7eb%27/%3E%3C/svg%3E";img.alt="";},true)})()</script>
-    <script src="https://assets.appsmith.com/kite_script_injector_v020.js"></script>
   </body>
 </html>
