@@ -177,6 +177,28 @@
         }
       }
 
+      .ecosystem-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 0.5rem;
+        scroll-snap-type: x proximity;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .ecosystem-card {
+        flex: 0 0 320px;
+        scroll-snap-align: start;
+      }
+
+      @media (min-width: 1024px) {
+        .ecosystem-card {
+          flex-basis: 340px;
+        }
+      }
+
       /* Custom Scrollbar for a tech feel */
       ::-webkit-scrollbar {
         width: 8px;
@@ -547,10 +569,10 @@ const data = JSON.parse(document.getElementById('content').textContent);
               </div>
 
               <!-- Stage (Bento Stack) -->
-              <div class="stage-col flex flex-col gap-6">
+              <div class="stage-col ecosystem-cards">
                 
                 <!-- Card 1 -->
-                <div class="glass-card p-8 md:p-10 reveal">
+                <div class="ecosystem-card glass-card p-8 md:p-10 reveal">
                   <div class="w-12 h-12 rounded-xl bg-brand-bg flex items-center justify-center border border-brand-border mb-6 text-brand-teal">
                     <i data-lucide="compass" class="w-6 h-6"></i>
                   </div>
@@ -564,7 +586,7 @@ const data = JSON.parse(document.getElementById('content').textContent);
                 </div>
 
                 <!-- Card 2 -->
-                <div class="glass-card p-8 md:p-10 reveal">
+                <div class="ecosystem-card glass-card p-8 md:p-10 reveal">
                   <div class="w-12 h-12 rounded-xl bg-brand-bg flex items-center justify-center border border-brand-border mb-6 text-brand-teal">
                     <i data-lucide="mic" class="w-6 h-6"></i>
                   </div>
@@ -578,7 +600,7 @@ const data = JSON.parse(document.getElementById('content').textContent);
                 </div>
 
                 <!-- Card 3 -->
-                <div class="glass-card p-8 md:p-10 reveal">
+                <div class="ecosystem-card glass-card p-8 md:p-10 reveal">
                   <div class="w-12 h-12 rounded-xl bg-brand-bg flex items-center justify-center border border-brand-border mb-6 text-brand-teal">
                     <i data-lucide="book-open" class="w-6 h-6"></i>
                   </div>
@@ -592,7 +614,7 @@ const data = JSON.parse(document.getElementById('content').textContent);
                 </div>
 
                 <!-- Card 4 (Sentra - Highlighted) -->
-                <div class="glass-card p-8 md:p-10 bg-brand-teal text-white border-none reveal relative overflow-hidden group">
+                <div class="ecosystem-card glass-card p-8 md:p-10 bg-brand-teal text-white border-none reveal relative overflow-hidden group">
                   <div class="absolute top-0 right-0 w-64 h-64 bg-brand-yellow/20 rounded-full blur-3xl -z-0 transform group-hover:scale-110 transition-transform duration-700"></div>
                   <div class="relative z-10">
                     <div class="flex items-center gap-3 mb-6">
