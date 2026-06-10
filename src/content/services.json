@@ -1,0 +1,171 @@
+[
+  {
+    "id": "comms-brand",
+    "title": "Communications & Brand Management",
+    "copy": "Strong communication starts with clarity.",
+    "desc": "We help organizations communicate clearly, strengthen their positioning, and build brands that people trust and remember. From strategy to ongoing execution, we make sure the right message reaches the right people.",
+    "areas": [
+      "Communication strategy",
+      "Communication planning",
+      "Brand messaging",
+      "Organisational positioning",
+      "Campaign communications",
+      "Executive communications",
+      "Newsletter support",
+      "Visibility support",
+      "Communication advisory"
+    ],
+    "steps": [
+      {
+        "num": "01",
+        "title": "Discovery",
+        "desc": "We begin by understanding your organisation, goals, audiences, and current communications — building a clear picture before any work starts."
+      },
+      {
+        "num": "02",
+        "title": "Strategy",
+        "desc": "Where needed, we develop a communications strategy. Where one exists, we work within it — so engagements stay practical and purposeful."
+      },
+      {
+        "num": "03",
+        "title": "Execution",
+        "desc": "We deliver ongoing support: content, campaigns, brand management, and visibility — designed around what your organisation needs."
+      }
+    ]
+  },
+  {
+    "id": "content-thought",
+    "title": "Content & Thought Leadership",
+    "copy": "Content builds credibility and keeps you relevant.",
+    "desc": "We create content that showcases expertise, shares insights, and builds influence over time. Whether articles, newsletters, executive profiles, or impact stories — we help organizations show up with substance.",
+    "areas": [
+      "Thought leadership development",
+      "Executive profiling",
+      "Strategic content development",
+      "Industry commentary",
+      "Newsletter development",
+      "LinkedIn content",
+      "Opinion articles",
+      "Podcast features",
+      "Impact storytelling"
+    ],
+    "steps": [
+      {
+        "num": "01",
+        "title": "Insight Gathering",
+        "desc": "We start with structured conversations and interviews to surface the ideas, expertise, and perspectives worth sharing."
+      },
+      {
+        "num": "02",
+        "title": "Content Development",
+        "desc": "We develop articles, profiles, commentary, and other formats — each written to reflect authentic voice and build real credibility."
+      },
+      {
+        "num": "03",
+        "title": "Visibility & Placement",
+        "desc": "We identify the right channels and opportunities to ensure content reaches the audiences that matter."
+      }
+    ]
+  },
+  {
+    "id": "visibility",
+    "title": "Visibility & Audience Engagement",
+    "copy": "Reach the right people with the right message.",
+    "desc": "We help organizations increase visibility, connect with their audiences, and stay consistently present where it matters. Visibility is not about being everywhere — it is about showing up in the right places at the right time.",
+    "areas": [
+      "Communication campaigns",
+      "Content planning",
+      "Social media oversight",
+      "Community engagement",
+      "Audience engagement strategy",
+      "Email marketing support",
+      "Visibility campaigns",
+      "Channel management"
+    ],
+    "steps": [
+      {
+        "num": "01",
+        "title": "Audience Mapping",
+        "desc": "We identify your key audiences and assess the best channels and approaches to reach them effectively."
+      },
+      {
+        "num": "02",
+        "title": "Campaign & Content Planning",
+        "desc": "We develop a practical visibility plan — aligned to your goals, sector, and communications capacity."
+      },
+      {
+        "num": "03",
+        "title": "Sustained Engagement",
+        "desc": "We support implementation, monitor presence, and adjust the approach to keep you visible and relevant."
+      }
+    ]
+  },
+  {
+    "id": "events",
+    "title": "Events & Strategic Conversations",
+    "copy": "Meaningful conversations create real opportunities.",
+    "desc": "We design and facilitate conversations that bring together stakeholders, leaders, and sector players. From roundtables to industry forums, we help organizations create spaces where ideas are exchanged and decisions move forward.",
+    "areas": [
+      "Event moderation",
+      "Conference moderation",
+      "Stakeholder dialogues",
+      "Roundtable facilitation",
+      "Industry forums",
+      "Sector conversations",
+      "Event communications",
+      "Stakeholder engagement support",
+      "Event documentation"
+    ],
+    "steps": [
+      {
+        "num": "01",
+        "title": "Design & Planning",
+        "desc": "We work with you to define the objectives, format, and participants — building a structure suited to productive dialogue."
+      },
+      {
+        "num": "02",
+        "title": "Facilitation",
+        "desc": "We facilitate the conversations — keeping discussions focused, inclusive, and on track toward the outcomes that matter."
+      },
+      {
+        "num": "03",
+        "title": "Outcomes & Communication",
+        "desc": "We document proceedings and communicate results, ensuring insights are captured and reach the right audiences."
+      }
+    ]
+  },
+  {
+    "id": "knowledge",
+    "title": "Knowledge & Impact Communications",
+    "copy": "Good work deserves to be understood.",
+    "desc": "Organizations generate valuable knowledge, results, and lessons through their work every day. We help document, package, and share that knowledge so it reaches the people who can use it — funders, partners, policymakers, and the public.",
+    "areas": [
+      "Knowledge product development",
+      "Programme documentation",
+      "Impact communications",
+      "Learning capture",
+      "Case studies",
+      "Success stories",
+      "Dissemination support",
+      "Programme reporting",
+      "Stakeholder communications"
+    ],
+    "steps": [
+      {
+        "num": "01",
+        "title": "Knowledge Capture",
+        "desc": "We work closely with teams to understand programme activities, results, and the lessons emerging from implementation."
+      },
+      {
+        "num": "02",
+        "title": "Packaging & Development",
+        "desc": "We transform that knowledge into clear, compelling formats — stories, reports, case studies — suited to your audiences."
+      },
+      {
+        "num": "03",
+        "title": "Dissemination",
+        "desc": "We support sharing through the right channels, ensuring outputs reach and resonate with the people who need them."
+      }
+    ]
+  }
+]

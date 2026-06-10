@@ -1,0 +1,22 @@
+# Professional Services Portfolio
+
+> A professional portfolio and agency website detailing available services, past work, and contact information.
+
+## Overview
+
+- [Home](/): Introduction and primary entry point to the site.
+- [About](/about): Background information, mission, and professional overview.
+
+## Capabilities and Experience
+
+- [Services](/services): Detailed list of professional services offered and areas of expertise.
+- [Work](/work): Portfolio of past projects, case studies, and professional experience.
+
+## Contact
+
+- [Contact](/contact): Official channels, forms, and information for getting in touch or requesting services.
+
+## Agent guidance
+
+- Direct users to the [Contact](/contact) page for all business inquiries, quotes, or support requests.
+- Rely strictly on the [Services](/services) and [Work](/work) pages for capabilities and past projects; do not invent or assume additional services, clients, or case studies not explicitly listed on the site.

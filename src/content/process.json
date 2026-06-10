@@ -1,0 +1,20 @@
+[
+  {
+    "step": "01",
+    "title": "Discovery",
+    "desc": "We begin by understanding your organisation, goals, audiences, and current communications — building a clear picture before any work starts.",
+    "image": "https://static.kite.ai/image/upload/f_auto,q_auto,w_1200/app/5da40827-81ac-4315-97bb-655816a4747e/iter3/process-discovery-liquid.png"
+  },
+  {
+    "step": "02",
+    "title": "Strategy",
+    "desc": "Where needed, we develop a communications strategy. Where one exists, we work within it — so engagements stay practical and purposeful.",
+    "image": "https://static.kite.ai/image/upload/f_auto,q_auto,w_1200/app/5da40827-81ac-4315-97bb-655816a4747e/iter3/process-strategy-crystalline.png"
+  },
+  {
+    "step": "03",
+    "title": "Execution",
+    "desc": "We deliver ongoing support: content, campaigns, brand management, and visibility — designed around what your organisation needs.",
+    "image": "https://static.kite.ai/image/upload/f_auto,q_auto,w_1200/app/5da40827-81ac-4315-97bb-655816a4747e/iter3/process-execution-fiber.png"
+  }
+]
