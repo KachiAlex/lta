@@ -1,12 +1,12 @@
 {
-  "name": "template",
+  "name": "lta",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "kite-client",
-    "build": "kite-client build"
+    "dev": "vite",
+    "build": "vite build"
   },
-  "dependencies": {
-    "@appsmithorg/template-frontend": "^1.1.3"
+  "devDependencies": {
+    "vite": "^6.0.0"
   }
 }
