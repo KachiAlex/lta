@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ContactForm } from '@/components/contact-form';
+import { Reveal } from '@/components/reveal';
 
 export const metadata: Metadata = {
   title: 'Contact | Let\'s Talk Agriculture',
@@ -23,6 +24,7 @@ export default function ContactPage() {
 
       <div className="section">
         <div className="wrap">
+          <Reveal>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 56 }}>
             <div>
               <h2 className="section-title serif" style={{ fontSize: 24 }}>Send an enquiry</h2>
@@ -54,6 +56,7 @@ export default function ContactPage() {
               </div>
             </div>
           </div>
+          </Reveal>
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { Reveal } from '@/components/reveal';
 
 export const metadata: Metadata = {
   title: 'Selected Work | Let\'s Talk Agriculture',
@@ -31,7 +32,8 @@ export default function WorkPage() {
 
       <div className="wrap">
         {engagements.map((e, i) => (
-          <div key={i} className="engagement">
+          <Reveal key={i} delay={i % 2 === 0 ? 0 : 100}>
+          <div className="engagement">
             <div>
               <span className="tag">{e.tag}</span>
               <h3>{e.title}</h3>
@@ -44,6 +46,7 @@ export default function WorkPage() {
               </svg>
             </div>
           </div>
+          </Reveal>
         ))}
       </div>
 

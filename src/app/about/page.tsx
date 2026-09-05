@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { Reveal, Stagger } from '@/components/reveal';
 
 export const metadata: Metadata = {
   title: 'About | Let\'s Talk Agriculture',
@@ -31,8 +32,8 @@ export default function AboutPage() {
 
       <div className="section">
         <div className="wrap">
-          <h2 className="section-title serif">Our approach</h2>
-          <div className="two-col">
+          <Reveal><h2 className="section-title serif">Our approach</h2></Reveal>
+          <Reveal delay={100}><div className="two-col">
             <p>
               We believe that effective communication is the missing link between great work and
               real impact. Many organizations across Africa&apos;s agriculture and food systems are
@@ -48,25 +49,25 @@ export default function AboutPage() {
               </p>
               <p className="serif best-move">Your best move: let your work speak — clearly, consistently, and to the right people.</p>
             </div>
-          </div>
+          </div></Reveal>
         </div>
       </div>
 
       <div className="section band">
         <div className="wrap">
-          <h2 className="section-title serif">Organizations we support</h2>
-          <div className="client-grid">
+          <Reveal><h2 className="section-title serif">Organizations we support</h2></Reveal>
+          <Stagger className="client-grid">
             {orgs.map((o) => (
               <div key={o} className="client-logo">{o}</div>
             ))}
-          </div>
+          </Stagger>
         </div>
       </div>
 
       <div className="section">
         <div className="wrap">
-          <h2 className="section-title serif">Our team</h2>
-          <div className="team-grid">
+          <Reveal><h2 className="section-title serif">Our team</h2></Reveal>
+          <Stagger className="team-grid">
             {team.map((m) => (
               <div key={m.name} className="team-card">
                 <div className="portrait" style={{ background: 'var(--color-bg-band)' }} />
@@ -77,7 +78,7 @@ export default function AboutPage() {
                 </div>
               </div>
             ))}
-          </div>
+          </Stagger>
         </div>
       </div>
 

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { Reveal, Stagger } from '@/components/reveal';
 
 type ServiceData = {
   slug: string;
@@ -24,8 +25,8 @@ export function ServicePage({ data }: { data: ServiceData }) {
 
       <div className="section">
         <div className="wrap">
-          <h2 className="section-title serif">What we offer</h2>
-          <div className="service-grid">
+          <Reveal><h2 className="section-title serif">What we offer</h2></Reveal>
+          <Stagger className="service-grid">
             {offerings.map((o) => (
               <div key={o.title} className="service-card">
                 <div className="icon-wrap">
@@ -38,14 +39,14 @@ export function ServicePage({ data }: { data: ServiceData }) {
                 <p>{o.desc}</p>
               </div>
             ))}
-          </div>
+          </Stagger>
         </div>
       </div>
 
       <div className="section band">
         <div className="wrap">
-          <h2 className="section-title serif">How we work</h2>
-          <div className="rec-grid">
+          <Reveal><h2 className="section-title serif">How we work</h2></Reveal>
+          <Reveal delay={100}><div className="rec-grid">
             <div>
               <ul className="dash">
                 <li>Discovery: We start by understanding your goals, audience, and context.</li>
@@ -60,7 +61,7 @@ export function ServicePage({ data }: { data: ServiceData }) {
               <div className="cta-line">Book a free 30-minute discovery call.</div>
               <Link href="/contact" className="pill">Start a conversation</Link>
             </div>
-          </div>
+          </div></Reveal>
         </div>
       </div>
 

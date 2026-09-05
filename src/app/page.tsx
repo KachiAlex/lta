@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { Reveal, Stagger } from '@/components/reveal';
 
 export const metadata: Metadata = {
   title: "Let's Talk Agriculture | Growth partner for African agriculture",
@@ -80,8 +81,8 @@ export default function HomePage() {
       {/* AT A GLANCE */}
       <div className="section">
         <div className="wrap">
-          <h2 className="section-title serif">What we do</h2>
-          <div className="service-grid">
+          <Reveal><h2 className="section-title serif">What we do</h2></Reveal>
+          <Stagger className="service-grid">
             {services.map((s) => (
               <Link key={s.href} href={s.href} className="service-card" style={{ textDecoration: 'none' }}>
                 <div className="icon-wrap">
@@ -94,27 +95,27 @@ export default function HomePage() {
                 <span className="pill small ghost">Learn more</span>
               </Link>
             ))}
-          </div>
+          </Stagger>
         </div>
       </div>
 
       {/* CLIENTS */}
       <div className="section band">
         <div className="wrap">
-          <h2 className="section-title serif">Organizations we work with</h2>
-          <div className="client-grid">
+          <Reveal><h2 className="section-title serif">Organizations we work with</h2></Reveal>
+          <Stagger className="client-grid">
             {clients.map((c) => (
               <div key={c} className="client-logo">{c}</div>
             ))}
-          </div>
+          </Stagger>
         </div>
       </div>
 
       {/* TESTIMONIALS */}
       <div className="section">
         <div className="wrap">
-          <h2 className="section-title serif">What clients say</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 18 }}>
+          <Reveal><h2 className="section-title serif">What clients say</h2></Reveal>
+          <Stagger style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 18 }} className="">
             {testimonials.map((t, i) => (
               <div key={i} className="testimonial-card">
                 <p className="quote">&ldquo;{t.quote}&rdquo;</p>
@@ -122,7 +123,7 @@ export default function HomePage() {
                 <div className="role">{t.role}</div>
               </div>
             ))}
-          </div>
+          </Stagger>
         </div>
       </div>
 
