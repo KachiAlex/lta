@@ -17,10 +17,10 @@ const navLinks = [
 export function Header() {
   const [open, setOpen] = useState(false);
   return (
-    <header className="masthead">
+    <header className="masthead" role="banner">
       <div className="wrap row">
-        <Link href="/" className="masthead-logo">Let&apos;s Talk Agriculture</Link>
-        <nav className="desktop-nav" style={{ display: 'flex', gap: 28, alignItems: 'center' }}>
+        <Link href="/" className="masthead-logo" aria-label="Let's Talk Agriculture — Home">Let&apos;s Talk Agriculture</Link>
+        <nav className="desktop-nav" aria-label="Primary navigation" style={{ display: 'flex', gap: 28, alignItems: 'center' }}>
           {navLinks.map((l) => (
             <Link
               key={l.href}
@@ -32,13 +32,13 @@ export function Header() {
           ))}
           <Link href="/contact" className="pill small">Book a Discovery Call</Link>
         </nav>
-        <button className="mobile-menu-btn" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+        <button className="mobile-menu-btn" onClick={() => setOpen(!open)} aria-label="Toggle menu" aria-expanded={open}>
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
       {open && (
         <div className="wrap">
-          <nav className="mobile-nav" style={{ display: 'flex' }}>
+          <nav className="mobile-nav" aria-label="Mobile navigation" style={{ display: 'flex' }}>
             {navLinks.map((l) => (
               <Link key={l.href} href={l.href} onClick={() => setOpen(false)}>
                 {l.label}

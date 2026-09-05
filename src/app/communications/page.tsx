@@ -3,7 +3,8 @@ import { ServicePage, makeMetadata } from '@/components/service-page';
 
 export const metadata: Metadata = makeMetadata(
   'Communications',
-  'Strategic communications advisory for African agriculture and food systems organizations.'
+  'Strategic communications advisory for African agriculture and food systems organizations.',
+  'communications'
 );
 
 export default function CommunicationsPage() {

@@ -3,8 +3,21 @@ import type { Metadata } from 'next';
 import { Reveal } from '@/components/reveal';
 
 export const metadata: Metadata = {
-  title: 'Selected Work | Let\'s Talk Agriculture',
-  description: 'Selected engagements from Let\'s Talk Agriculture across communications, media, editorial, and talent.',
+  title: 'Selected Work',
+  description: "Selected engagements from Let's Talk Agriculture — strategic communications, media campaigns, editorial content, and talent solutions for organizations across Africa's agriculture and food systems.",
+  keywords: [
+    'agriculture communications case studies',
+    'agritech media campaigns Africa',
+    'agriculture editorial reports',
+    'agribusiness talent placements',
+    'Let\'s Talk Agriculture portfolio',
+  ],
+  alternates: { canonical: '/work' },
+  openGraph: {
+    title: 'Selected Work | Let\'s Talk Agriculture',
+    description: "Engagements that moved the needle across communications, media, editorial, and talent.",
+    url: 'https://letstalkagriculture.com/work',
+  },
 };
 
 const engagements = [

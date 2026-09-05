@@ -1,0 +1,16 @@
+{
+  "name": "Let's Talk Agriculture",
+  "short_name": "LTA",
+  "description": "Growth partner for African agriculture and food systems",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#E8EDE8",
+  "theme_color": "#0C2320",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ]
+}

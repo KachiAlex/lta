@@ -3,7 +3,8 @@ import { ServicePage, makeMetadata } from '@/components/service-page';
 
 export const metadata: Metadata = makeMetadata(
   'Editorial — Roots & Reach',
-  'Editorial content services for African agriculture and food systems organizations.'
+  'Editorial content services for African agriculture and food systems organizations.',
+  'editorial'
 );
 
 export default function EditorialPage() {

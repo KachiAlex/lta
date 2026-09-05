@@ -3,7 +3,8 @@ import { ServicePage, makeMetadata } from '@/components/service-page';
 
 export const metadata: Metadata = makeMetadata(
   'Media',
-  'Media production and placement for African agriculture and food systems organizations.'
+  'Media production and placement for African agriculture and food systems organizations.',
+  'media'
 );
 
 export default function MediaPage() {

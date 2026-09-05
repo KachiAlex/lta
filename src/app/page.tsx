@@ -3,8 +3,33 @@ import type { Metadata } from 'next';
 import { Reveal, Stagger } from '@/components/reveal';
 
 export const metadata: Metadata = {
-  title: "Let's Talk Agriculture | Growth partner for African agriculture",
-  description: "A growth partner for organizations across Africa's agriculture and food systems — strategic communications, media, editorial, and talent.",
+  title: {
+    default: "Let's Talk Agriculture | Growth partner for African agriculture",
+    template: `%s | Let's Talk Agriculture`,
+  },
+  description: "A growth partner for organizations across Africa's agriculture and food systems — strategic communications, media, editorial, and talent solutions.",
+  keywords: [
+    'African agriculture communications',
+    'agritech media Africa',
+    'agriculture editorial content',
+    'agriculture talent recruitment Africa',
+    'food systems strategic communications',
+    'agribusiness growth partner',
+  ],
+  alternates: { canonical: '/' },
+  openGraph: {
+    type: 'website',
+    title: "Let's Talk Agriculture | Growth partner for African agriculture",
+    description: "A growth partner for organizations across Africa's agriculture and food systems — strategic communications, media, editorial, and talent solutions.",
+    url: 'https://letstalkagriculture.com',
+    siteName: "Let's Talk Agriculture",
+    locale: 'en_US',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "Let's Talk Agriculture | Growth partner for African agriculture",
+    description: "Strategic communications, media, editorial, and talent for Africa's agriculture and food systems.",
+  },
 };
 
 const services = [
@@ -33,9 +58,9 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <div className="hero">
+      <section className="hero">
         <div className="wrap">
-          <div className="eyebrow">Growth Partner &middot; African Agriculture &amp; Food Systems</div>
+          <p className="eyebrow">Growth Partner &middot; African Agriculture &amp; Food Systems</p>
           <h1 className="serif">
             Strategic communications for agriculture{' '}
             <span className="underline-wrap">
@@ -58,28 +83,28 @@ export default function HomePage() {
           </div>
 
           {/* STAT STRIP */}
-          <div className="stat-strip">
-            <div>
+          <div className="stat-strip" role="list">
+            <div role="listitem">
               <span className="num serif">Four</span>
               <div className="cap">service lines</div>
               <div className="sub">Communications, Media, Editorial &amp; Talent — covering the full growth cycle.</div>
             </div>
-            <div>
+            <div role="listitem">
               <span className="num serif">25+</span>
               <div className="cap">engagements delivered</div>
               <div className="sub">Across agribusiness, agritech, development programmes and industry bodies.</div>
             </div>
-            <div>
+            <div role="listitem">
               <span className="num serif">Africa</span>
               <div className="cap">is our focus</div>
               <div className="sub">An Africa-focused specialist covering all four service areas together.</div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      {/* AT A GLANCE */}
-      <div className="section">
+      {/* SERVICES */}
+      <section className="section">
         <div className="wrap">
           <Reveal><h2 className="section-title serif">What we do</h2></Reveal>
           <Stagger className="service-grid">
@@ -97,10 +122,10 @@ export default function HomePage() {
             ))}
           </Stagger>
         </div>
-      </div>
+      </section>
 
       {/* CLIENTS */}
-      <div className="section band">
+      <section className="section band">
         <div className="wrap">
           <Reveal><h2 className="section-title serif">Organizations we work with</h2></Reveal>
           <Stagger className="client-grid">
@@ -109,10 +134,10 @@ export default function HomePage() {
             ))}
           </Stagger>
         </div>
-      </div>
+      </section>
 
       {/* TESTIMONIALS */}
-      <div className="section">
+      <section className="section">
         <div className="wrap">
           <Reveal><h2 className="section-title serif">What clients say</h2></Reveal>
           <Stagger style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 18 }} className="">
@@ -125,10 +150,10 @@ export default function HomePage() {
             ))}
           </Stagger>
         </div>
-      </div>
+      </section>
 
       {/* CLOSING CTA */}
-      <div className="closing">
+      <section className="closing">
         <div className="inner">
           <h2 className="serif">Your front door is solid. Let&apos;s build a way in that works without you.</h2>
           <p>
@@ -173,7 +198,7 @@ export default function HomePage() {
             </g>
           </svg>
         </figure>
-      </div>
+      </section>
     </>
   );
 }

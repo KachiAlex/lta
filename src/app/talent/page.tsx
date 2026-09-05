@@ -3,7 +3,8 @@ import { ServicePage, makeMetadata } from '@/components/service-page';
 
 export const metadata: Metadata = makeMetadata(
   'Talent — LTA Talent',
-  'Talent solutions for African agriculture and food systems organizations.'
+  'Talent solutions for African agriculture and food systems organizations.',
+  'talent'
 );
 
 export default function TalentPage() {

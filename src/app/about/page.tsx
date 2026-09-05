@@ -3,8 +3,20 @@ import type { Metadata } from 'next';
 import { Reveal, Stagger } from '@/components/reveal';
 
 export const metadata: Metadata = {
-  title: 'About | Let\'s Talk Agriculture',
-  description: 'A growth partner for organizations across Africa\'s agriculture and food systems.',
+  title: 'About',
+  description: "Let's Talk Agriculture is a growth partner for organizations across Africa's agriculture and food systems — helping them strengthen visibility, engage stakeholders, and communicate with clarity.",
+  keywords: [
+    'about Let\'s Talk Agriculture',
+    'African agriculture consultancy',
+    'agriculture communications team',
+    'food systems experts Africa',
+  ],
+  alternates: { canonical: '/about' },
+  openGraph: {
+    title: 'About | Let\'s Talk Agriculture',
+    description: "A growth partner for organizations across Africa's agriculture and food systems.",
+    url: 'https://letstalkagriculture.com/about',
+  },
 };
 
 const team = [

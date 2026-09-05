@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { Reveal, Stagger } from '@/components/reveal';
+import { ServiceJsonLd, BreadcrumbJsonLd } from '@/components/json-ld';
 
 type ServiceData = {
   slug: string;
@@ -11,10 +12,12 @@ type ServiceData = {
 };
 
 export function ServicePage({ data }: { data: ServiceData }) {
-  const { title, tagline, description, offerings } = data;
+  const { title, tagline, description, offerings, slug } = data;
 
   return (
     <>
+      <ServiceJsonLd name={title} description={description} slug={slug} />
+      <BreadcrumbJsonLd items={[{ name: 'Home', url: '/' }, { name: title, url: `/${slug}` }]} />
       <div className="page-hero">
         <div className="wrap">
           <div className="eyebrow">{title}</div>
@@ -76,6 +79,15 @@ export function ServicePage({ data }: { data: ServiceData }) {
   );
 }
 
-export function makeMetadata(title: string, description: string): Metadata {
-  return { title: `${title} | Let's Talk Agriculture`, description };
+export function makeMetadata(title: string, description: string, slug?: string): Metadata {
+  return {
+    title,
+    description,
+    alternates: slug ? { canonical: `/${slug}` } : undefined,
+    openGraph: {
+      title: `${title} | Let's Talk Agriculture`,
+      description,
+      url: slug ? `https://letstalkagriculture.com/${slug}` : undefined,
+    },
+  };
 }

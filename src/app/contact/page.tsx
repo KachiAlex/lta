@@ -3,8 +3,20 @@ import { ContactForm } from '@/components/contact-form';
 import { Reveal } from '@/components/reveal';
 
 export const metadata: Metadata = {
-  title: 'Contact | Let\'s Talk Agriculture',
-  description: 'Get in touch with Let\'s Talk Agriculture — book a discovery call or send us an enquiry.',
+  title: 'Contact',
+  description: "Get in touch with Let's Talk Agriculture — book a discovery call or send us an enquiry. We help organizations across Africa's agriculture and food systems communicate their work.",
+  keywords: [
+    'contact Let\'s Talk Agriculture',
+    'agriculture communications enquiry',
+    'book discovery call agriculture',
+    'agriculture consultancy contact',
+  ],
+  alternates: { canonical: '/contact' },
+  openGraph: {
+    title: 'Contact | Let\'s Talk Agriculture',
+    description: "Book a discovery call or send us an enquiry — let's start a conversation.",
+    url: 'https://letstalkagriculture.com/contact',
+  },
 };
 
 export default function ContactPage() {
