@@ -436,9 +436,9 @@ export default function HomePage() {
               </svg>
             </div>
             <div>
-              <div className="method-label">Our approach</div>
-              <p>We work with organizations across Africa&apos;s agriculture and food systems, drawing on deep sector knowledge, a network of practitioners, and a track record of delivering across communications, media, editorial, and talent.</p>
-              <p>Every engagement starts with understanding your goals and context. We then craft a practical plan, execute with measurable outcomes, and ensure the work continues to deliver after we hand off. Our clients include agribusinesses, agritech startups, development programmes, and industry bodies — each with different needs, each served with the same Africa-focused expertise.</p>
+              <div className="method-label">Methodology</div>
+              <p>I captured this on 21 August 2026, drawing on your homepage, robots.txt, your public records, an SEO keyword source, and an AI-answer test that ran eight questions matched to your four service lines.</p>
+              <p>A few honest limits. I did not print a visitor number, because traffic models for a site this size are routinely off by ten or twenty times; your own analytics is the only trustworthy source there. The internet archive rate-limited every request, so I could not read how your positioning has changed over time. Your sitemap request failed the same way, so I could not list every page you have. The workforce data source was not licensed, so I can say nothing about your hiring direction. Trustpilot could not be reached, so your presence there is unknown rather than confirmed empty. And no domains resolved for the competitors named in AI answers, so I could not run a head-to-head. Where a finding rests on a single day or a self-reported figure, I&apos;ve treated it as directional rather than precise.</p>
             </div>
           </div>
         </div>
@@ -448,12 +448,8 @@ export default function HomePage() {
       <section className="closing">
         <div className="inner">
           <h2 className="serif">Your front door is solid. Let&apos;s build a way in that works without you.</h2>
-          <p>
-            Whether you need strategic communications, media production, editorial content, or talent
-            solutions, we help you reach the right people with the right message. Let&apos;s talk about
-            what you need.
-          </p>
-          <Link href="/contact" className="pill">Start a conversation</Link>
+          <p>Right now your whole reach runs on the founder posting daily. Pick your top priority and I&apos;ll start: the answer pages that claim your Africa-specialist position, the three files that fix your crawler problem, or the testimonial requests for your Editorial and Talent work. I&apos;ll have first drafts back in a few hours, and there&apos;s nothing to install. (Nothing goes live without your sign-off.)</p>
+          <Link href="#" className="pill">Start on my top priority</Link>
         </div>
         <figure>
           <svg viewBox="0 0 900 320" xmlns="http://www.w3.org/2000/svg" style={{ width: '100%', display: 'block' }}>

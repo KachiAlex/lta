@@ -58,8 +58,8 @@ $body .= "Email: {$email}\n";
 $body .= "Subject: {$subject}\n\n";
 $body .= "Message:\n{$message}\n";
 
-// Use the server's own domain for From to pass SPF/DKIM checks.
-// Reply-To is set to the submitter's email so you can reply directly.
+// Use the server\'s own domain for From to pass SPF/DKIM checks.
+// Reply-To is set to the submitter\'s email so you can reply directly.
 $fromEmail = 'noreply@' . $_SERVER['SERVER_NAME'];
 $headers = "From: Let's Talk Agriculture <{$fromEmail}>\r\n";
 $headers .= "Reply-To: {$email}\r\n";
