@@ -22,6 +22,19 @@ export default function MediaPage() {
           { title: 'Social Media Campaigns', desc: 'Strategic social media campaigns that engage and grow your audience.' },
           { title: 'Media Placement', desc: 'Earned and paid media placement across African and international outlets.' },
         ],
+        checklist: [
+          { label: 'Video & documentary production', ok: true },
+          { label: 'Podcast production', ok: true },
+          { label: 'Social media campaigns', ok: true },
+          { label: 'Media placement & distribution', ok: true },
+          { label: 'Photography', ok: true },
+          { label: 'Animation & motion graphics', ok: false },
+        ],
+        bullets: [
+          { type: 'x', text: 'Content produced for both technical and general African audiences.' },
+          { type: 'x', text: 'Full production pipeline — concept, filming, editing, distribution.' },
+          { type: 'o', text: 'Drone and field production available across the continent.' },
+        ],
       }}
     />
   );

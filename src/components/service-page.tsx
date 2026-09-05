@@ -9,10 +9,12 @@ type ServiceData = {
   tagline: string;
   description: string;
   offerings: { title: string; desc: string }[];
+  checklist?: { label: string; ok: boolean }[];
+  bullets?: { type: 'x' | 'o'; text: string }[];
 };
 
 export function ServicePage({ data }: { data: ServiceData }) {
-  const { title, tagline, description, offerings, slug } = data;
+  const { title, tagline, description, offerings, slug, checklist, bullets } = data;
 
   return (
     <>
@@ -46,12 +48,69 @@ export function ServicePage({ data }: { data: ServiceData }) {
         </div>
       </div>
 
+      {(checklist || bullets) && (
+        <div className="section">
+          <div className="wrap">
+            <Reveal><h2 className="section-title serif">What&apos;s included</h2></Reveal>
+            <div className="rec-grid">
+              {checklist && (
+                <Reveal delay={100}>
+                  <div className="check-rows">
+                    {checklist.map((c) => (
+                      <div key={c.label} className={`check-row ${c.ok ? 'ok' : 'no'}`}>
+                        <span className="icon">{c.ok ? '\u2713' : '\u2717'}</span>
+                        <span>{c.label}</span>
+                      </div>
+                    ))}
+                  </div>
+                </Reveal>
+              )}
+              {bullets && (
+                <Reveal delay={200}>
+                  <ul className="bullet-icon">
+                    {bullets.map((b, i) => (
+                      <li key={i}>
+                        <span className={`box ${b.type}`}>{b.type === 'x' ? '\u2717' : '\u00A0'}</span>
+                        <span>{b.text}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </Reveal>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
       <div className="section band">
         <div className="wrap">
           <Reveal><h2 className="section-title serif">How we work</h2></Reveal>
           <Reveal delay={100}><div className="rec-grid">
             <div>
-              <ul className="dash">
+              {/* DIAGRAM CARD */}
+              <div className="diagram-card">
+                <svg className="diagram-svg" viewBox="0 0 400 110">
+                  <rect x="10" y="42" width="60" height="26" rx="6" fill="#3E7A4C" opacity="0.15" stroke="#3E7A4C" strokeWidth="1.5" />
+                  <g stroke="#3E7A4C" strokeWidth="1.5" fill="none">
+                    <path d="M70 55 L150 20" />
+                    <path d="M70 55 L150 40" />
+                    <path d="M70 55 L150 55" />
+                    <path d="M70 55 L150 70" />
+                    <path d="M70 55 L150 90" />
+                  </g>
+                  <rect x="150" y="12" width="55" height="16" rx="4" fill="#3E7A4C" opacity="0.15" stroke="#3E7A4C" strokeWidth="1.2" />
+                  <rect x="150" y="32" width="55" height="16" rx="4" fill="#3E7A4C" opacity="0.15" stroke="#3E7A4C" strokeWidth="1.2" />
+                  <rect x="150" y="52" width="55" height="16" rx="4" fill="#3E7A4C" opacity="0.15" stroke="#3E7A4C" strokeWidth="1.2" />
+                  <rect x="150" y="72" width="55" height="16" rx="4" fill="#3E7A4C" opacity="0.15" stroke="#3E7A4C" strokeWidth="1.2" />
+                  <rect x="150" y="92" width="55" height="14" rx="4" fill="#3E7A4C" opacity="0.15" stroke="#3E7A4C" strokeWidth="1.2" />
+                  <line x1="240" y1="10" x2="240" y2="100" stroke="#C9D0C9" strokeWidth="1.5" />
+                  <rect x="270" y="45" width="60" height="26" rx="6" fill="#C15C2E" opacity="0.12" stroke="#C15C2E" strokeWidth="1.5" />
+                  <line x1="335" y1="58" x2="365" y2="58" stroke="#C15C2E" strokeWidth="1.5" />
+                  <line x1="358" y1="50" x2="358" y2="66" stroke="#C15C2E" strokeWidth="2" />
+                </svg>
+                <div className="diagram-caption">From discovery to delivery, we connect your goals to measurable outcomes.</div>
+              </div>
+              <ul className="dash" style={{ marginTop: 24 }}>
                 <li>Discovery: We start by understanding your goals, audience, and context.</li>
                 <li>Strategy: We craft a practical plan aligned with your objectives and budget.</li>
                 <li>Execution: We deliver with attention to detail and measurable outcomes.</li>

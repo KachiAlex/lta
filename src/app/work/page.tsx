@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
-import { Reveal } from '@/components/reveal';
+import { Reveal, Stagger } from '@/components/reveal';
 
 export const metadata: Metadata = {
   title: 'Selected Work',
@@ -27,6 +27,25 @@ const engagements = [
   { tag: 'Talent', title: 'Executive Search for an Agribusiness', desc: 'Led a senior leadership search for a growing agribusiness, placing a operations director within eight weeks.' },
   { tag: 'Communications', title: 'Crisis Communications for an Industry Body', desc: 'Provided rapid-response communications support during a food safety incident, managing media relations and stakeholder messaging.' },
   { tag: 'Media', title: 'Documentary Series for a Development Partner', desc: 'Produced a six-part documentary series highlighting smallholder farmer success stories, broadcast on national television and streamed online.' },
+];
+
+const serviceProof = [
+  { label: 'Communications', ok: true },
+  { label: 'Media', ok: true },
+  { label: 'Editorial (Roots & Reach)', ok: true },
+  { label: 'Talent (LTA Talent)', ok: true },
+];
+
+const workStats = [
+  { n: '25+', t: 'engagements delivered across Africa.' },
+  { n: '8', t: 'client organizations served.' },
+  { n: '3', t: 'countries covered in a single programme.' },
+];
+
+const workPoints = [
+  { type: 'x', text: 'Engagements span agribusiness, agritech, development programmes, and industry bodies.' },
+  { type: 'x', text: 'Both testimonials speak to Communications and Media work.' },
+  { type: 'o', text: 'Editorial and Talent engagements are growing — new case studies coming soon.' },
 ];
 
 export default function WorkPage() {
@@ -61,6 +80,43 @@ export default function WorkPage() {
           </div>
           </Reveal>
         ))}
+      </div>
+
+      {/* SUMMARY SECTION */}
+      <div className="section">
+        <div className="wrap">
+          <Reveal><h2 className="section-title serif">Proof across all four service lines</h2></Reveal>
+          <div className="rec-grid">
+            <Reveal delay={100}>
+              <div className="table-rows">
+                {serviceProof.map((s) => (
+                  <div key={s.label} className="table-row ok">
+                    <span>{s.label}</span>
+                    <span className="icon">&#10003;</span>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+            <Reveal delay={200}>
+              <div className="stat-boxes">
+                {workStats.map((s) => (
+                  <div key={s.n} className="stat-box">
+                    <span className="n serif">{s.n}</span>
+                    <span className="t">{s.t}</span>
+                  </div>
+                ))}
+              </div>
+              <ul className="bullet-icon" style={{ marginTop: 24 }}>
+                {workPoints.map((p, i) => (
+                  <li key={i}>
+                    <span className={`box ${p.type}`}>{p.type === 'x' ? '\u2717' : '\u00A0'}</span>
+                    <span>{p.text}</span>
+                  </li>
+                ))}
+              </ul>
+            </Reveal>
+          </div>
+        </div>
       </div>
 
       <div className="closing">

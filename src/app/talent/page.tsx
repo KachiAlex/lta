@@ -22,6 +22,19 @@ export default function TalentPage() {
           { title: 'Talent Advisory', desc: 'Workforce planning and organizational design support for growing teams.' },
           { title: 'Interim Placements', desc: 'Experienced professionals for short-term and project-based roles.' },
         ],
+        checklist: [
+          { label: 'Executive search', ok: true },
+          { label: 'Specialist recruitment', ok: true },
+          { label: 'Talent advisory & planning', ok: true },
+          { label: 'Interim placements', ok: true },
+          { label: 'Onboarding support', ok: true },
+          { label: 'Volume recruitment', ok: false },
+        ],
+        bullets: [
+          { type: 'x', text: 'Network spans agribusiness, agritech, development, and policy across Africa.' },
+          { type: 'x', text: 'We understand the sector — we screen for context, not just keywords.' },
+          { type: 'o', text: 'Retention support available for placed candidates.' },
+        ],
       }}
     />
   );

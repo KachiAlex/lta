@@ -22,6 +22,19 @@ export default function EditorialPage() {
           { title: 'Case Studies', desc: 'Detailed case studies that demonstrate your impact and approach.' },
           { title: 'Content Strategy', desc: 'Editorial calendars and content frameworks that keep your messaging consistent.' },
         ],
+        checklist: [
+          { label: 'Industry reports & white papers', ok: true },
+          { label: 'Thought leadership articles', ok: true },
+          { label: 'Case studies', ok: true },
+          { label: 'Editorial strategy & calendars', ok: true },
+          { label: 'Copyediting & proofreading', ok: true },
+          { label: 'Annual reports', ok: false },
+        ],
+        bullets: [
+          { type: 'x', text: 'Written by people who understand African agriculture and food systems.' },
+          { type: 'x', text: 'Clear, quotable, authoritative — designed to be cited.' },
+          { type: 'o', text: 'Distribution support to get content to policymakers and practitioners.' },
+        ],
       }}
     />
   );

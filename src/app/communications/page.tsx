@@ -22,6 +22,19 @@ export default function CommunicationsPage() {
           { title: 'Crisis Communications', desc: 'Rapid-response support to manage reputational risks and stakeholder confidence.' },
           { title: 'Brand Positioning', desc: 'Clear, consistent positioning that sets you apart in Africa\u2019s agriculture sector.' },
         ],
+        checklist: [
+          { label: 'Communications strategy development', ok: true },
+          { label: 'Stakeholder mapping and engagement', ok: true },
+          { label: 'Crisis communications support', ok: true },
+          { label: 'Brand positioning and messaging', ok: true },
+          { label: 'Media relations', ok: true },
+          { label: 'Internal communications', ok: false },
+        ],
+        bullets: [
+          { type: 'x', text: 'Tailored to African agriculture and food systems context.' },
+          { type: 'x', text: 'Practical, measurable strategies — not 100-page documents that gather dust.' },
+          { type: 'o', text: 'Ongoing support available beyond strategy delivery.' },
+        ],
       }}
     />
   );

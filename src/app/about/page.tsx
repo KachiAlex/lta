@@ -27,6 +27,30 @@ const team = [
 
 const orgs = ['MEDA', 'Mercy Corps AgriFin', 'FoodChain ID', 'AGRA', 'IFAD', 'GIZ'];
 
+const aboutGlance = [
+  { label: 'Who we are', lede: 'A growth partner, not a generalist.', body: 'We focus exclusively on African agriculture and food systems. That means we understand the landscape, the language, and the stakeholders — from the start.', src: 'Our positioning' },
+  { label: 'What we do', lede: 'Four service lines, one roof.', body: 'Communications, media, editorial, and talent. Most firms offer one or two. We cover the full growth cycle.', src: 'Our services' },
+  { label: 'How we work', lede: 'Practical, measurable, aligned.', body: 'We listen first, then craft strategies that fit your goals. No templates, no jargon — just clear thinking and good execution.', src: 'Our approach' },
+];
+
+const capabilities = [
+  { label: 'Communications strategy', ok: true },
+  { label: 'Media production & placement', ok: true },
+  { label: 'Editorial & thought leadership', ok: true },
+  { label: 'Talent search & recruitment', ok: true },
+  { label: 'Africa-focused sector expertise', ok: true },
+  { label: 'Stakeholder engagement', ok: true },
+];
+
+const sectors = [
+  { label: 'Agribusiness', ok: true },
+  { label: 'Agritech', ok: true },
+  { label: 'Development programmes', ok: true },
+  { label: 'Industry bodies & associations', ok: true },
+  { label: 'Donor-funded projects', ok: true },
+  { label: 'Policy & research', ok: true },
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -73,6 +97,54 @@ export default function AboutPage() {
               <div key={o} className="client-logo">{o}</div>
             ))}
           </Stagger>
+        </div>
+      </div>
+
+      {/* AT A GLANCE */}
+      <div className="section">
+        <div className="wrap">
+          <Reveal><h2 className="section-title serif">Who we are, at a glance</h2></Reveal>
+          <Stagger className="glance-grid">
+            {aboutGlance.map((c) => (
+              <div key={c.label} className="g-card">
+                <div className="g-label">{c.label}</div>
+                <div className="g-lede">{c.lede}</div>
+                <div className="g-body">{c.body}</div>
+                <div className="g-src">({c.src})</div>
+              </div>
+            ))}
+          </Stagger>
+        </div>
+      </div>
+
+      {/* CAPABILITIES & SECTORS */}
+      <div className="section">
+        <div className="wrap">
+          <Reveal><h2 className="section-title serif">What we cover</h2></Reveal>
+          <div className="rec-grid">
+            <Reveal delay={100}>
+              <h3 className="serif" style={{ fontSize: 22, marginBottom: 20 }}>Our capabilities</h3>
+              <div className="check-rows">
+                {capabilities.map((c) => (
+                  <div key={c.label} className="check-row ok">
+                    <span className="icon">&#10003;</span>
+                    <span>{c.label}</span>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+            <Reveal delay={200}>
+              <h3 className="serif" style={{ fontSize: 22, marginBottom: 20 }}>Sectors we serve</h3>
+              <div className="table-rows">
+                {sectors.map((s) => (
+                  <div key={s.label} className="table-row ok">
+                    <span>{s.label}</span>
+                    <span className="icon">&#10003;</span>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+          </div>
         </div>
       </div>
 
